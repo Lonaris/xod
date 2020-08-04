@@ -987,8 +987,6 @@ struct xod__core__continuously {
 
     TimeMs timeoutAt = 0;
 
-    State state;
-
     xod__core__continuously () {
     }
 
@@ -998,10 +996,6 @@ struct xod__core__continuously {
     };
 
     using Context = ContextObject*;
-
-    State* getState(__attribute__((unused)) Context ctx) {
-        return &state;
-    }
 
     void setTimeout(__attribute__((unused)) Context ctx, TimeMs timeout) {
         this->timeoutAt = transactionTime() + timeout;
@@ -1055,6 +1049,12 @@ struct xod__core__continuously {
         ctx->_isOutputDirty_TICK = true;
     }
 
+    State state;
+
+    State* getState(__attribute__((unused)) Context ctx) {
+        return &state;
+    }
+
     void evaluate(Context ctx) {
         emitValue<output_TICK>(ctx, 1);
         setTimeout(ctx, 0);
@@ -1076,10 +1076,6 @@ struct xod__core__clock {
 
     typedef Pulse typeof_TICK;
 
-    struct State {
-      TimeMs nextTrig;
-    };
-
     struct input_EN { };
     struct input_IVAL { };
     struct input_RST { };
@@ -1100,8 +1096,6 @@ struct xod__core__clock {
 
     TimeMs timeoutAt = 0;
 
-    State state;
-
     xod__core__clock () {
     }
 
@@ -1117,10 +1111,6 @@ struct xod__core__clock {
     };
 
     using Context = ContextObject*;
-
-    State* getState(__attribute__((unused)) Context ctx) {
-        return &state;
-    }
 
     void setTimeout(__attribute__((unused)) Context ctx, TimeMs timeout) {
         this->timeoutAt = transactionTime() + timeout;
@@ -1190,8 +1180,9 @@ struct xod__core__clock {
         ctx->_isOutputDirty_TICK = true;
     }
 
+    TimeMs nextTrig;
+
     void evaluate(Context ctx) {
-        State* state = getState(ctx);
         TimeMs tNow = transactionTime();
         auto ival = getValue<input_IVAL>(ctx);
         if (ival < 0) ival = 0;
@@ -1203,7 +1194,7 @@ struct xod__core__clock {
 
         if (isTimedOut(ctx) && isEnabled && !isRstDirty) {
             emitValue<output_TICK>(ctx, 1);
-            state->nextTrig = tNext;
+            nextTrig = tNext;
             setTimeout(ctx, dt);
         }
 
@@ -1211,11 +1202,11 @@ struct xod__core__clock {
             // Handle enable/disable/reset
             if (!isEnabled) {
                 // Disable timeout loop on explicit false on EN
-                state->nextTrig = 0;
+                nextTrig = 0;
                 clearTimeout(ctx);
-            } else if (state->nextTrig < tNow || state->nextTrig > tNext) {
+            } else if (nextTrig < tNow || nextTrig > tNext) {
                 // Start timeout from scratch
-                state->nextTrig = tNext;
+                nextTrig = tNext;
                 setTimeout(ctx, dt);
             }
         }
@@ -1260,8 +1251,6 @@ struct xod__core__flip_flop {
 
     typeof_MEM _output_MEM;
 
-    State state;
-
     xod__core__flip_flop (typeof_MEM output_MEM) {
         _output_MEM = output_MEM;
     }
@@ -1276,10 +1265,6 @@ struct xod__core__flip_flop {
     };
 
     using Context = ContextObject*;
-
-    State* getState(__attribute__((unused)) Context ctx) {
-        return &state;
-    }
 
     template<typename PinT> typename decltype(getValueType(PinT()))::type getValue(Context ctx) {
         return getValue(ctx, identity<PinT>());
@@ -1341,6 +1326,12 @@ struct xod__core__flip_flop {
         ctx->_isOutputDirty_MEM = true;
     }
 
+    State state;
+
+    State* getState(__attribute__((unused)) Context ctx) {
+        return &state;
+    }
+
     void evaluate(Context ctx) {
         bool oldState = getValue<output_MEM>(ctx);
         bool newState = oldState;
@@ -1400,8 +1391,6 @@ struct xod__gpio__digital_write {
       return identity<typeof_DONE>();
     }
 
-    State state;
-
     xod__gpio__digital_write () {
     }
 
@@ -1415,10 +1404,6 @@ struct xod__gpio__digital_write {
     };
 
     using Context = ContextObject*;
-
-    State* getState(__attribute__((unused)) Context ctx) {
-        return &state;
-    }
 
     template<typename PinT> typename decltype(getValueType(PinT()))::type getValue(Context ctx) {
         return getValue(ctx, identity<PinT>());
@@ -1471,6 +1456,12 @@ struct xod__gpio__digital_write {
 
     void emitValue(Context ctx, typeof_DONE val, identity<output_DONE>) {
         ctx->_isOutputDirty_DONE = true;
+    }
+
+    State state;
+
+    State* getState(__attribute__((unused)) Context ctx) {
+        return &state;
     }
 
     void evaluate(Context ctx) {
