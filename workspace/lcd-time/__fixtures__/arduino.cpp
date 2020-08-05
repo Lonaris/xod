@@ -976,9 +976,6 @@ struct xod__core__continuously {
 
     typedef Pulse typeof_TICK;
 
-    struct State {
-    };
-
     struct output_TICK { };
 
     static const identity<typeof_TICK> getValueType(output_TICK) {
@@ -1047,12 +1044,6 @@ struct xod__core__continuously {
 
     void emitValue(Context ctx, typeof_TICK val, identity<output_TICK>) {
         ctx->_isOutputDirty_TICK = true;
-    }
-
-    State state;
-
-    State* getState(__attribute__((unused)) Context ctx) {
-        return &state;
     }
 
     void evaluate(Context ctx) {
@@ -1166,6 +1157,7 @@ struct xod__core__system_time {
 //-----------------------------------------------------------------------------
 // xod/core/cast-to-string(number) implementation
 //-----------------------------------------------------------------------------
+//#pragma XOD dirtieness disable
 
 namespace xod {
 struct xod__core__cast_to_string__number {
@@ -1173,14 +1165,6 @@ struct xod__core__cast_to_string__number {
     typedef Number typeof_IN;
 
     typedef XString typeof_OUT;
-
-    //#pragma XOD dirtieness disable
-
-    struct State {
-        char str[16];
-        CStringView view;
-        State() : view(str) { }
-    };
 
     struct input_IN { };
     struct output_OUT { };
@@ -1249,17 +1233,17 @@ struct xod__core__cast_to_string__number {
         this->_output_OUT = val;
     }
 
-    State state;
-
-    State* getState(__attribute__((unused)) Context ctx) {
-        return &state;
-    }
+    char str[16];
+    CStringView view;
 
     void evaluate(Context ctx) {
-        auto state = getState(ctx);
+        if (isSettingUp()) {
+            view = CStringView(str);
+        }
+
         auto num = getValue<input_IN>(ctx);
-        formatNumber(num, 2, state->str);
-        emitValue<output_OUT>(ctx, XString(&state->view));
+        formatNumber(num, 2, str);
+        emitValue<output_OUT>(ctx, XString(&view));
     }
 
 };

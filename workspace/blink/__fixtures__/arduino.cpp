@@ -976,9 +976,6 @@ struct xod__core__continuously {
 
     typedef Pulse typeof_TICK;
 
-    struct State {
-    };
-
     struct output_TICK { };
 
     static const identity<typeof_TICK> getValueType(output_TICK) {
@@ -1047,12 +1044,6 @@ struct xod__core__continuously {
 
     void emitValue(Context ctx, typeof_TICK val, identity<output_TICK>) {
         ctx->_isOutputDirty_TICK = true;
-    }
-
-    State state;
-
-    State* getState(__attribute__((unused)) Context ctx) {
-        return &state;
     }
 
     void evaluate(Context ctx) {
@@ -1228,9 +1219,6 @@ struct xod__core__flip_flop {
 
     typedef Logic typeof_MEM;
 
-    struct State {
-    };
-
     struct input_SET { };
     struct input_TGL { };
     struct input_RST { };
@@ -1326,12 +1314,6 @@ struct xod__core__flip_flop {
         ctx->_isOutputDirty_MEM = true;
     }
 
-    State state;
-
-    State* getState(__attribute__((unused)) Context ctx) {
-        return &state;
-    }
-
     void evaluate(Context ctx) {
         bool oldState = getValue<output_MEM>(ctx);
         bool newState = oldState;
@@ -1356,6 +1338,8 @@ struct xod__core__flip_flop {
 //-----------------------------------------------------------------------------
 // xod/gpio/digital-write implementation
 //-----------------------------------------------------------------------------
+//#pragma XOD evaluate_on_pin disable
+//#pragma XOD evaluate_on_pin enable input_UPD
 
 namespace xod {
 template <uint8_t constant_input_PORT>
@@ -1366,12 +1350,6 @@ struct xod__gpio__digital_write {
     typedef Pulse typeof_UPD;
 
     typedef Pulse typeof_DONE;
-
-    //#pragma XOD evaluate_on_pin disable
-    //#pragma XOD evaluate_on_pin enable input_UPD
-
-    struct State {
-    };
 
     struct input_PORT { };
     struct input_SIG { };
@@ -1456,12 +1434,6 @@ struct xod__gpio__digital_write {
 
     void emitValue(Context ctx, typeof_DONE val, identity<output_DONE>) {
         ctx->_isOutputDirty_DONE = true;
-    }
-
-    State state;
-
-    State* getState(__attribute__((unused)) Context ctx) {
-        return &state;
     }
 
     void evaluate(Context ctx) {
