@@ -4,158 +4,158 @@ import { isMacOS } from './browser';
 
 const rawItems = {
   file: {
-    label: 'File',
+    label: 'Archivo',
   },
   newProject: {
-    label: 'New Project...',
+    label: 'Nuevo proyecto...',
     command: COMMAND.NEW_PROJECT,
   },
   openProject: {
-    label: 'Open Project...',
+    label: 'Abrir Proyecto...',
     command: COMMAND.OPEN_PROJECT,
   },
   openTutorialProject: {
-    label: 'Open Tutorial Project',
+    label: 'Abrir proyecto tutorial',
   },
   save: {
-    label: 'Save',
+    label: 'Guardar',
     command: COMMAND.SAVE,
   },
   saveAs: {
-    label: 'Save As...',
+    label: 'Guardar como...',
     command: COMMAND.SAVE_AS,
   },
   saveCopyAs: {
-    label: 'Save Copy As...',
+    label: 'Guardar copia como...',
     command: COMMAND.SAVE_COPY_AS,
   },
   switchWorkspace: {
-    label: 'Switch Workspace...',
+    label: 'Cambiar espacio de trabajo...',
   },
   importProject: {
-    label: 'Import Project...',
+    label: 'Importar proyecto...',
   },
   exportProject: {
-    label: 'Export Project...',
+    label: 'Exportar Proyecto...',
   },
   newPatch: {
-    label: 'New Patch...',
+    label: 'Nuevo Patch...',
     command: COMMAND.ADD_PATCH,
   },
   addLibrary: {
-    label: 'Add Library...',
+    label: 'Agregar Libreria...',
   },
   publish: {
-    label: 'Publish Library...',
+    label: 'Publicar Libreria...',
   },
   exit: {
-    label: 'Exit',
+    label: 'Salir',
   },
 
   edit: {
-    label: 'Edit',
+    label: 'Editar',
   },
   undo: {
-    label: 'Undo',
+    label: 'Deshacer',
     command: COMMAND.UNDO,
   },
   redo: {
-    label: 'Redo',
+    label: 'Rehacer',
     command: COMMAND.REDO,
   },
   cut: {
-    label: 'Cut',
+    label: 'Cortar',
     role: 'cut',
     command: COMMAND.CUT,
   },
   copy: {
-    label: 'Copy',
+    label: 'Copiar',
     command: COMMAND.COPY,
     role: 'copy',
   },
   paste: {
-    label: 'Paste',
+    label: 'Pegar',
     command: COMMAND.PASTE,
     role: 'paste',
   },
   selectall: {
-    label: 'Select All',
+    label: 'Seleccionar todo',
     command: COMMAND.SELECT_ALL,
   },
   projectPreferences: {
-    label: 'Project Preferences',
+    label: 'Preferencias del proyecto',
   },
   insertComment: {
-    label: 'Insert Comment',
+    label: 'Insertar comentario',
   },
   insertNode: {
-    label: 'Insert Node...',
+    label: 'Insertar nodo...',
     command: COMMAND.INSERT_NODE,
   },
   splitLinksToBuses: {
-    label: 'Convert Selected Links to Buses',
+    label: 'Convertir los Links seleccionados a Buses',
     command: COMMAND.MAKE_BUS,
   },
 
   deploy: {
-    label: 'Deploy',
+    label: 'Implementar',
   },
   showCodeForArduino: {
-    label: 'Show Code for Arduino',
+    label: 'Mostrar código para Arduino',
   },
   uploadToArduino: {
-    label: 'Upload to Arduino...',
+    label: 'Subir a Arduino...',
   },
   connectSerial: {
-    label: 'Connect Serial...',
+    label: 'Conectar Serial...',
   },
   updatePackages: {
-    label: 'Upgrade Arduino Packages && Toolchains...',
+    label: 'Actualizar Paquetes de Arduino && Toolchains...',
   },
   runSimulation: {
-    label: 'Simulate',
+    label: 'Simular',
   },
 
   view: {
-    label: 'View',
+    label: 'Ver',
   },
   toggleHelp: {
-    label: 'Toggle Helpbar',
+    label: 'Alternar barra de ayuda',
     command: COMMAND.TOGGLE_HELP,
   },
   toggleDebugger: {
-    label: 'Toggle Deployment Pane',
+    label: 'Alternar panel de implementación',
     command: COMMAND.TOGGLE_DEBUGGER,
   },
   toggleAccountPane: {
-    label: 'Toggle Account Pane',
+    label: 'Alternar panel de reporte',
   },
   toggleProjectBrowser: {
-    label: 'Toggle Project Browser',
+    label: 'Alternar navegador de proyectos',
   },
   toggleInspector: {
-    label: 'Toggle Inspector',
+    label: 'Alternar Inspector',
   },
   panToOrigin: {
-    label: 'Pan to Origin',
+    label: 'Panorámica al origen',
     command: COMMAND.PAN_TO_ORIGIN,
   },
   panToCenter: {
-    label: 'Pan to Center',
+    label: 'Panorámica al centro',
     command: COMMAND.PAN_TO_CENTER,
   },
 
   help: {
-    label: 'Help',
+    label: 'Ayuda',
   },
   documentation: {
-    label: 'Documentation',
+    label: 'Documentación',
   },
   shortcuts: {
-    label: 'Shortcuts',
+    label: 'Accesos directos',
   },
   forum: {
-    label: 'Forum',
+    label: 'Foro',
   },
 };
 
