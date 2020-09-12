@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "Computing tones' switch frequency",
+      "content": "Cálculo de la frecuencia de conmutación de tonos",
       "id": "BJ9vYzSyr",
       "position": {
         "units": "slots",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "content": "Computing actual duration of each tone",
+      "content": "Calcular la duración real de cada tono",
       "id": "BkeoFzryH",
       "position": {
         "units": "slots",
@@ -29,7 +29,7 @@
       }
     }
   ],
-  "description": "Two tone alarm node",
+  "description": "Nodo de alarma de dos tonos",
   "links": [
     {
       "id": "B1PMUgekB",
@@ -275,7 +275,7 @@
       "boundLiterals": {
         "__out__": "0.5"
       },
-      "description": "Defines tone 1 duration in fraction of T pin value",
+      "description": "Define la duración del tono 1 en una fracción del valor del pin T",
       "id": "S1-QABeg1S",
       "label": "DUTY",
       "position": {
@@ -316,7 +316,7 @@
       "boundLiterals": {
         "__out__": "660"
       },
-      "description": "Tone 2  frequency [Hz]",
+      "description": "Frecuencia de tono 2 [Hz]",
       "id": "SJje7N60N",
       "label": "FRQ2",
       "position": {
@@ -363,7 +363,7 @@
       "boundLiterals": {
         "__out__": "1"
       },
-      "description": "Defines the period of one complete cycle",
+      "description": "Define el período de un ciclo completo",
       "id": "rymAHxgkH",
       "label": "T",
       "position": {

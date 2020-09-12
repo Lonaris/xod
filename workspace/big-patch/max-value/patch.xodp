@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "reset subsystem",
+      "content": "restablecer subsistema",
       "id": "Bk5LkyByS",
       "position": {
         "units": "slots",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "content": "Scanning cycle",
+      "content": "Ciclo de escaneo",
       "id": "H1WaGkByH",
       "position": {
         "units": "slots",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "content": "Storing and updating value of maxium analog sensor data\n\n             cell         on reset       comparing     update if more",
+      "content": "Almacenar y actualizar el valor de los datos máximos del sensor analógico\n\n             celda         en el reinicio       comparando     la actualización si hay más",
       "id": "HJbpJJBJH",
       "position": {
         "units": "slots",
@@ -43,7 +43,7 @@
       }
     },
     {
-      "content": "Scanning done condition",
+      "content": "Condición de escaneo terminado",
       "id": "HkeZQJB1r",
       "position": {
         "units": "slots",
@@ -57,7 +57,7 @@
       }
     },
     {
-      "content": "clocking subsystem",
+      "content": "subsistema de reloj",
       "id": "S1HT-JBkr",
       "position": {
         "units": "slots",
@@ -71,7 +71,7 @@
       }
     },
     {
-      "content": "For STP value lower then 30, IVAL pin value higher then 0.2 is recommended. For 30 steps and higher, IVAL may be lower. Lowest IVAL value is defined by servo features.",
+      "content": "Para un valor de STP inferior a 30, se recomienda un valor de pin IVAL superior a 0,2. Para 30 pasos o más, el IVAL puede ser menor. El valor más bajo de IVAL se define por las características del servo.",
       "id": "rJth2-r1S",
       "position": {
         "units": "slots",
@@ -85,7 +85,7 @@
       }
     },
     {
-      "content": "Maximum value angle return after scanning",
+      "content": "Retorno de ángulo de valor máximo después de escanear",
       "id": "ry_9H_91r",
       "position": {
         "units": "slots",
@@ -99,7 +99,7 @@
       }
     },
     {
-      "content": "Storing and updating value of angle of maximum radiation direction",
+      "content": "Almacenamiento y actualización del valor del ángulo de la máxima dirección de radiación.",
       "id": "rykeZ1SyB",
       "position": {
         "units": "slots",
@@ -113,7 +113,7 @@
       }
     }
   ],
-  "description": "Node for Amperka \"Colony kit\". May be used for scanning for maximum value via analog sensor attached to a servo. Spins servo from 0° to 180°, gets maximum value of analog data and then spins servo to the angle where the max value was.",
+  "description": "Nodo para Amperka \"Colony kit\".  Puede usarse para escanear el valor máximo mediante un sensor analógico conectado a un servo. Gira el servo de 0 ° a 180 °, obtiene el valor máximo de datos analógicos y luego gira el servo al ángulo donde estaba el valor máximo.",
   "links": [
     {
       "id": "B14eCVWJB",
@@ -672,7 +672,7 @@
       "type": "xod/core/less"
     },
     {
-      "description": "Analog sensor data value [0...1.0]",
+      "description": "Valor de datos del sensor analógico [0...1.0]",
       "id": "BktoImTRV",
       "label": "VAL",
       "position": {
@@ -683,7 +683,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Search step quantity [2...180]. Degrees of each step = 180 / STP",
+      "description": "Cantidad de pasos de búsqueda [2 ... 180]. Grados de cada paso = 180 / STP",
       "id": "ByPn8ma0E",
       "label": "STP",
       "position": {
@@ -752,7 +752,7 @@
       "type": "xod/core/any"
     },
     {
-      "description": "Current servo angle [0...1.0]",
+      "description": "Ángulo del servo actual [0...1.0]",
       "id": "HyqqDXaC4",
       "label": "ANG",
       "position": {
@@ -781,7 +781,7 @@
       "type": "xod/core/any"
     },
     {
-      "description": "Found maximum angle value stored in memory [0...180]",
+      "description": "Valor de ángulo máximo encontrado almacenado en la memoria [0...180]",
       "id": "Sk5TBM-JS",
       "label": "MEM",
       "position": {
@@ -874,7 +874,7 @@
       "type": "xod/core/flip-flop"
     },
     {
-      "description": "Fires when done",
+      "description": "Dispara cuando termina",
       "id": "rJVZw4WJB",
       "label": "DONE",
       "position": {

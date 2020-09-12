@@ -15,7 +15,7 @@
       }
     }
   ],
-  "description": "Play one note with frequency [Hz] and fixed duration [s]",
+  "description": "Toca una nota con frecuencia [Hz] y duración fija [s]",
   "nodes": [
     {
       "id": "BkGQrcHp0E",
@@ -44,7 +44,7 @@
       "boundLiterals": {
         "__out__": "440"
       },
-      "description": "Sound frequency [Hz]",
+      "description": "Frecuencia de sonido [Hz]",
       "id": "r1-7S5HaAN",
       "label": "FREQ",
       "position": {
@@ -58,7 +58,7 @@
       "boundLiterals": {
         "__out__": "0.25"
       },
-      "description": "Sound duration [s]",
+      "description": "Duración del sonido [s]",
       "id": "rJcPqBaC4",
       "label": "DUR",
       "position": {
