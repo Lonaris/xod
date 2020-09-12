@@ -2,15 +2,15 @@
   "name": "built-in-patches",
   "patches": {
     "@/abstract": {
-      "description": "Makes a patch containing this node abstract. That is, a patch node which only defines a generic interface in terms of generic-type inputs and outputs without an actual implementation. To be useful there should be one or more sibling specialization patches which implement the abstraction for particular input types.",
+      "description": "Hace un parche que contiene este resumen de nodo. Es decir, un nodo de parche que solo define una interfaz genérica en términos de entradas y salidas de tipo genérico sin una implementación real. Para que sea útil, debe haber uno o más parches de especialización hermanos que implementen la abstracción para tipos de entrada particulares.",
       "path": "@/abstract"
     },
     "@/deprecated": {
-      "description": "Deprecates a patch which contains this node. Use it to archive outdated patch nodes. The projects which already uses the deprecated node will not break. Only a warning message will be shown. Use the marker node description to provide a deprecation reason and migration hint, it will be shown along the warning to end-users. For new projects, deprecated nodes are unlisted by default, so usage of such nodes by library users is discouraged.",
+      "description": "Desactiva un parche que contiene este nodo. Úselo para archivar nodos de parches obsoletos. Los proyectos que ya utilizan el nodo obsoleto no se romperán. Solo se mostrará un mensaje de advertencia. Utilice la descripción del nodo marcador para proporcionar un motivo de desactivación y una sugerencia de migración; se mostrará junto con la advertencia a los usuarios finales. Para proyectos nuevos, los nodos obsoletos no están listados de forma predeterminada, por lo que se desaconseja el uso de dichos nodos por parte de los usuarios de la biblioteca.",
       "path": "@/deprecated"
     },
     "@/from-bus": {
-      "description": "Defines an attachment point to a patch-level data bus with the name defined by this node label.",
+      "description": "Define un punto de conexión a un bus de datos a nivel de parche con el nombre definido por esta etiqueta de nodo.",
       "nodes": {
         "__out__": {
           "id": "__out__",
@@ -24,47 +24,47 @@
       "path": "@/from-bus"
     },
     "@/input-boolean": {
-      "description": "Input terminal node. Adds a new boolean input pin to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. A value bound to the terminal node pin becomes the default for the created input pin.",
+      "description": "Nodo terminal de entrada. Agrega un nuevo pin de entrada booleano al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Un valor vinculado al pin del nodo terminal se convierte en el predeterminado para el pin de entrada creado.",
       "path": "@/input-boolean"
     },
     "@/input-byte": {
-      "description": "Input terminal node. Adds a new byte input pin to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. A value bound to the terminal node pin becomes the default for the created input pin.",
+      "description": "Nodo terminal de entrada. Agrega un nuevo pin de entrada de byte al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Un valor vinculado al pin del nodo terminal se convierte en el predeterminado para el pin de entrada creado.",
       "path": "@/input-byte"
     },
     "@/input-dead": {
-      "description": "This terminal should not be visible to an end-user.",
+      "description": "Este terminal no debe ser visible para un usuario final.",
       "path": "@/input-dead"
     },
     "@/input-number": {
-      "description": "Input terminal node. Adds a new number input pin to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. A value bound to the terminal node pin becomes the default for the created input pin.",
+      "description": "Nodo terminal de entrada. Agrega un nuevo pin de entrada de número al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Un valor vinculado al pin del nodo terminal se convierte en el predeterminado para el pin de entrada creado.",
       "path": "@/input-number"
     },
     "@/input-port": {
-      "description": "Input terminal node. Adds a new port input pin to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. A value bound to the terminal node pin becomes the default for the created input pin.",
+      "description": "Nodo terminal de entrada. Agrega un nuevo pin de entrada de puerto al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Un valor vinculado al pin del nodo terminal se convierte en el predeterminado para el pin de entrada creado.",
       "path": "@/input-port"
     },
     "@/input-pulse": {
-      "description": "Input terminal node. Adds a new pulse input pin to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. A value bound to the terminal node pin becomes the default for the created input pin.",
+      "description": "Nodo terminal de entrada. Agrega un nuevo pin de entrada de pulso al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Un valor vinculado al pin del nodo terminal se convierte en el predeterminado para el pin de entrada creado.",
       "path": "@/input-pulse"
     },
     "@/input-string": {
-      "description": "Input terminal node. Adds a new string input pin to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. A value bound to the terminal node pin becomes the default for the created input pin.",
+      "description": "Nodo terminal de entrada. Agrega un nuevo pin de entrada de cadena al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Un valor vinculado al pin del nodo terminal se convierte en el predeterminado para el pin de entrada creado.",
       "path": "@/input-string"
     },
     "@/input-t1": {
-      "description": "Generic input terminal node. Adds a new input pin of a generic type `t1` to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. Placing this node onto a patch node makes it generic. The concrete type for `t1` is deduced from values and links bound to the created inputs of type `t1`.",
+      "description": "Nodo terminal de entrada genérico. Agrega un nuevo pin de entrada de tipo genérico `t1` al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Colocar este nodo en un nodo de parche lo convierte en genérico. El tipo específico para `t1` is deduced from values and links bound to the created inputs of type `t1`.",
       "path": "@/input-t1"
     },
     "@/input-t2": {
-      "description": "Generic input terminal node. Adds a new input pin of a generic type `t2` to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. Placing this node onto a patch node makes it generic. The concrete type for `t2` is deduced from values and links bound to the created inputs of type `t2`.",
+      "description": "Nodo terminal de entrada genérico. Agrega un nuevo pin de entrada de tipo genérico `t2` al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Colocar este nodo en un nodo de parche lo convierte en genérico. El tipo específico para `t2` is deduced from values and links bound to the created inputs of type `t2`.",
       "path": "@/input-t2"
     },
     "@/input-t3": {
-      "description": "Generic input terminal node. Adds a new input pin of a generic type `t3` to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. Placing this node onto a patch node makes it generic. The concrete type for `t3` is deduced from values and links bound to the created inputs of type `t3`.",
+      "description": "Nodo terminal de entrada genérico. Agrega un nuevo pin de entrada de tipo genérico `t3` al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Colocar este nodo en un nodo de parche lo convierte en genérico. El tipo específico para `t3` is deduced from values and links bound to the created inputs of type `t3`.",
       "path": "@/input-t3"
     },
     "@/jumper": {
-      "description": "A simple no-operation node. Use jumpers to reflow links making them easier to read",
+      "description": "Un nodo simple sin operación. Utilice puentes para reajustar los enlaces y facilitar su lectura.",
       "links": {
         "HkrhyNMEQ": {
           "id": "HkrhyNMEQ",
@@ -99,35 +99,35 @@
       "path": "@/jumper"
     },
     "@/not-implemented-in-xod": {
-      "description": "Tells XOD that the patch containing this node is implemented in C++ rather than as a composition of other nodes. All nodes other than terminals and other special markers are ignored",
+      "description": "Le dice a XOD que el parche que contiene este nodo está implementado en C ++ en lugar de como una composición de otros nodos. Todos los nodos que no sean terminales y otros marcadores especiales se ignoran",
       "path": "@/not-implemented-in-xod"
     },
     "@/output-boolean": {
-      "description": "Output terminal node. Adds a new boolean output pin to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order.",
+      "description": "Nodo terminal de salida. Agrega un nuevo pin de salida booleano al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines.",
       "path": "@/output-boolean"
     },
     "@/output-byte": {
-      "description": "Output terminal node. Adds a new byte output pin to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order.",
+      "description": "Nodo terminal de salida. Agrega un nuevo pin de salida de bytes al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines.",
       "path": "@/output-byte"
     },
     "@/output-dead": {
-      "description": "This terminal should not be visible to end-user.",
+      "description": "Este terminal no debe ser visible para el usuario final.",
       "path": "@/output-dead"
     },
     "@/output-number": {
-      "description": "Output terminal node. Adds a new number output pin to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order.",
+      "description": "Nodo terminal de salida. Agrega un nuevo pin de salida numérico al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines.",
       "path": "@/output-number"
     },
     "@/output-port": {
-      "description": "Output terminal node. Adds a new port output pin to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order.",
+      "description": "Nodo terminal de salida. Agrega un nuevo pin de salida de puerto al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines.",
       "path": "@/output-port"
     },
     "@/output-pulse": {
-      "description": "Output terminal node. Adds a new pulse output pin to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order.",
+      "description": "Nodo terminal de salida. Agrega un nuevo pin de salida de pulsos al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines.",
       "path": "@/output-pulse"
     },
     "@/output-self": {
-      "description": "Output terminal marker node. A patch containing this node defines a new custom type with the name matching the patch name. The internal data layout must be described in C++ using the `not-implemented-in-xod` node. Using this marker leads to automatic creation of input-xxx and output-xxx terminal patch nodes next to the original patch.",
+      "description": "Nodo marcador de terminal de salida. Un parche que contiene este nodo define un nuevo tipo personalizado con el nombre que coincide con el nombre del parche. El diseño de los datos internos debe describirse en C ++ utilizando el nodo `not-implemented-in-xod` . El uso de este marcador conduce a la creación automática de nodos de parche terminal input-xxx y output-xxx junto al parche original.",
       "path": "@/output-self"
     },
     "@/output-string": {
@@ -135,23 +135,23 @@
       "path": "@/output-string"
     },
     "@/output-t1": {
-      "description": "Generic output terminal node. Adds a new output pin of a generic type `t1` to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. Placing this node onto a patch node makes it generic. The concrete type for `t1` is deduced from values and links bound to input pins of type `t1`.",
+      "description": "Nodo terminal de salida genérico. Agrega un nuevo pin de salida de un tipo genérico `t1` al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Colocar este nodo en un nodo de parche lo convierte en genérico. El tipo concreto de `t1` se deduce de los valores y enlaces vinculados a los pines de entrada de tipo `t1`.",
       "path": "@/output-t1"
     },
     "@/output-t2": {
-      "description": "Generic output terminal node. Adds a new output pin of a generic type `t2` to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. Placing this node onto a patch node makes it generic. The concrete type for `t2` is deduced from values and links bound to input pins of type `t2`.",
+      "description": "Nodo terminal de salida genérico. Agrega un nuevo pin de salida de un tipo genérico `t2` al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Colocar este nodo en un nodo de parche lo convierte en genérico. El tipo concreto de `t2` se deduce de los valores y enlaces vinculados a los pines de entrada de tipo `t2`.",
       "path": "@/output-t2"
     },
     "@/output-t3": {
-      "description": "Generic output terminal node. Adds a new output pin of a generic type `t3` to the patch node which contains this node. Terminal label and description are propagated to the pin. Horizontal position relative to other terminals defines the pin order. Placing this node onto a patch node makes it generic. The concrete type for `t3` is deduced from values and links bound to input pins of type `t3`.",
+      "description": "Nodo terminal de salida genérico. Agrega un nuevo pin de salida de un tipo genérico `t3` al nodo de parche que contiene este nodo. La etiqueta y la descripción del terminal se propagan al pin. La posición horizontal con respecto a otros terminales define el orden de los pines. Colocar este nodo en un nodo de parche lo convierte en genérico. El tipo concreto de `t3` se deduce de los valores y enlaces vinculados a los pines de entrada de tipo `t3`.",
       "path": "@/output-t3"
     },
     "@/tabtest": {
-      "description": "A marker node which defines a tabular test (tabtest) for the patch node. A tabtest is a kind of unit test expressed as a send-in/check-out table.",
+      "description": "Un nodo marcador que define una prueba tabular (tabtest) para el nodo de parche. Una prueba de tabulación es un tipo de prueba unitaria expresada como una tabla de envío / salida.",
       "path": "@/tabtest"
     },
     "@/to-bus": {
-      "description": "Defines a sink to patch-level data bus with the name defined by this node label. Effectively, this node creates a new bus.",
+      "description": "Define un receptor de bus de datos a nivel de parche con el nombre definido por esta etiqueta de nodo. Efectivamente, este nodo crea un nuevo bus.",
       "nodes": {
         "__in__": {
           "id": "__in__",
@@ -165,19 +165,19 @@
       "path": "@/to-bus"
     },
     "@/utility": {
-      "description": "Marks a patch which contains this node as an internal utility. Utiliy nodes should only be used as helpers to compose other patch nodes of the library. Utilities are unlisted by default for library users, so the direct usage of such nodes is discouraged for them.",
+      "description": "Marca un parche que contiene este nodo como una utilidad interna. Los nodos de utilidad solo deben usarse como ayudantes para componer otros nodos de parche de la biblioteca. Las utilidades no están listadas de forma predeterminada para los usuarios de bibliotecas, por lo que se desaconseja el uso directo de dichos nodos para ellos.",
       "path": "@/utility"
     },
     "@/variadic-1": {
-      "description": "Makes the rightmost input of the patch node containing this node variadic",
+      "description": "Hace la entrada más a la derecha del nodo de parche que contiene este nodo variadic",
       "path": "@/variadic-1"
     },
     "@/variadic-2": {
-      "description": "Makes two rightmost inputs of the patch node containing this node variadic",
+      "description": "Hace dos entradas más a la derecha del nodo de parche que contiene este nodo variadic",
       "path": "@/variadic-2"
     },
     "@/variadic-3": {
-      "description": "Makes three rightmost inputs of the patch node containing this node variadic",
+      "description": "Hace tres entradas más a la derecha del nodo de parche que contiene esta variadic de nodo",
       "path": "@/variadic-3"
     }
   }

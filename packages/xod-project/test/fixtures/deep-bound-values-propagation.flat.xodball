@@ -307,7 +307,7 @@
           "content": "struct State {\n    bool begun;\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    if (!isInputDirty<input_DUMP>(ctx))\n        return;\n\n    State* state = getState(ctx);\n    if (!state->begun) {\n        Serial.begin(115200);\n    }\n\n    auto line = getValue<input_LINE>(ctx);\n    if (line) {\n        for (auto it = line->iterate(); it; ++it)\n            Serial.write((char)*it);\n        Serial.write('\\r');\n        Serial.write('\\n');\n        Serial.flush();\n    }\n}\n"
         }
       ],
-      "description": "Outputs a line of text to the board standard debug interface",
+      "description": "Envía una línea de texto a la interfaz de depuración estándar de la placa",
       "nodes": {
         "HJdO9HwJ-": {
           "label": "LINE",
@@ -346,7 +346,7 @@
           "content": "struct State {\n    Number value;\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    if (!isInputDirty<input_UPD>(ctx))\n        return;\n\n    State* state = getState(ctx);\n    auto newValue = getValue<input_NEW>(ctx);\n    if (newValue == state->value)\n        return;\n\n    state->value = newValue;\n    emitValue<output_MEM>(ctx, newValue);\n}\n"
         }
       ],
-      "description": "Permanently holds a single value",
+      "description": "Mantiene permanentemente un valor único",
       "nodes": {
         "HkXm80uHPyb": {
           "description": "A value to store",
@@ -380,7 +380,7 @@
           "boundLiterals": {
             "__in__": "0"
           },
-          "description": "The latest saved value ",
+          "description": "El último valor guardado ",
           "label": "MEM",
           "id": "r1lQLAOBwJb",
           "position": {
@@ -400,7 +400,7 @@
           "content": "struct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    char str[16];\n    auto num = getValue<input_IN>(ctx);\n    dtostrf(num, 0, 2, str);\n    auto xstr = ::xod::List<char>::fromPlainArray(str, strlen(str));\n    emitValue<output_OUT>(ctx, xstr);\n}\n"
         }
       ],
-      "description": "Transforms a number to string with two digits after dot",
+      "description": "Transforma un número en una cadena con dos dígitos después del punto",
       "nodes": {
         "__in__": {
           "id": "__in__",

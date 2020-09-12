@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "Utility nodes for table tests",
+  "description": "Nodos de utilidad para pruebas de tablas",
   "license": "AGPL-3.0",
   "name": "tabtest",
   "version": "1.0.0"

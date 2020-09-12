@@ -1,7 +1,7 @@
 {
   "patches": {
     "xod/common-hardware/led": {
-      "description": "Drives a generic single color dimmable LED. The conversion between luminance and LED power is biased so that change in brightness on range 0…1 is percepted more or less uniformly by a human.",
+      "description": "Controla un LED regulable genérico de un solo color. La conversión entre luminancia y potencia del LED está sesgada de modo que el cambio de brillo en el rango 0… 1 sea percibido de manera más o menos uniforme por un ser humano.",
       "links": {
         "Hk64xTn8-": {
           "id": "Hk64xTn8-",
@@ -39,7 +39,7 @@
       },
       "nodes": {
         "B1oqkTnIb": {
-          "description": "Board port number the LED is connected to. The port should be capable of generating PWM signal.",
+          "description": "Número de puerto de la placa al que está conectado el LED. El puerto debe poder generar una señal PWM.",
           "label": "PORT",
           "id": "B1oqkTnIb",
           "position": {
@@ -57,7 +57,7 @@
           "type": "xod/core/pwm-output"
         },
         "HyYh1a3LZ": {
-          "description": "Luminance (brightness) value in relative units [0.0, 1.0].",
+          "description": "Valor de luminancia (brillo) en unidades relativas [0.0, 1.0].",
           "label": "LUM",
           "id": "HyYh1a3LZ",
           "position": {
@@ -85,10 +85,10 @@
           "content": "struct State {\n    int configuredPort = -1;\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    State* state = getState(ctx);\n    const int port = (int)getValue<input_PORT>(ctx);\n    if (port != state->configuredPort) {\n        ::pinMode(port, OUTPUT);\n        // Store configured port so to avoid repeating `pinMode` call if just\n        // SIG is updated\n        state->configuredPort = port;\n    }\n\n    auto duty = getValue<input_DUTY>(ctx);\n    duty = duty > 1 ? 1 : (duty < 0 ? 0 : duty);\n\n    uint8_t val = (uint8_t)(duty * 255.0);\n    ::analogWrite(port, val);\n}\n"
         }
       ],
-      "description": "Outputs hardware-supported PWM signal on a board port",
+      "description": "Emite una señal PWM compatible con hardware en un puerto de la placa",
       "nodes": {
         "ByXnYHPyb": {
-          "description": "Duty cycle value in range 0.0 … 1.0",
+          "description": "Valor del ciclo de trabajo en rango 0.0 … 1.0",
           "label": "DUTY",
           "id": "ByXnYHPyb",
           "position": {
@@ -106,7 +106,7 @@
           "type": "xod/patch-nodes/not-implemented-in-xod"
         },
         "rJsaFSvk-": {
-          "description": "Board PWM port to write to",
+          "description": "Puerto PWM de placa para escribir",
           "label": "PORT",
           "id": "rJsaFSvk-",
           "position": {
@@ -126,7 +126,7 @@
           "content": "struct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    Number x = getValue<input_IN>(ctx);\n    emitValue<output_OUT>(ctx, x * x * x);\n}\n"
         }
       ],
-      "description": "Computes the cube (i.e. x³) of an input value.",
+      "description": "Calcula el cubo (es decir, x³) de un valor de entrada.",
       "nodes": {
         "B1QQ_nhUb": {
           "id": "B1QQ_nhUb",

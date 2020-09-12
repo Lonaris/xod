@@ -2,14 +2,14 @@
   "authors": [
     "xod"
   ],
-  "description": "A crash course tutorial baked as a project",
+  "description": "Un tutorial de curso intensivo elaborado como un proyecto",
   "license": "MIT",
-  "name": "welcome-to-xod",
+  "name": "bienvenido-a-xod",
   "patches": {
     "@/01-hello": {
       "comments": {
         "H1Xt8V5bm": {
-          "content": "BTW, I am a comment. Even though I am here, I do not affect the patch because I am invisible to it. I am visible only to you. You can move me, too.\n",
+          "content": "Por cierto, soy un comentario. Aunque estoy aquí, no afecto el parche porque soy invisible para él. Soy visible solo para ti. Tú también puedes moverme.\n",
           "id": "H1Xt8V5bm",
           "position": {
             "x": 14,
@@ -23,7 +23,7 @@
           }
         },
         "SyzEUkjK-": {
-          "content": "Welcome to XOD, Maker! \n\nIn XOD, we do not use text to code; we use visual objects instead.\n\nThis large gray area with boxes is your program. It's called a *patch*. In this patch, there is only one object of interest: the `led` node, a grey rectangle with little circles. You will be able to make complicated programs using this rectangles. \n\nFirst, try to move the rectangle. Its position on the workspace does not affect your program but can make it more readable. \n\n## Instructions\n\n1. On the left-hand side, you will find a list of patches grouped by a project or library name. The list is called a *Project Browser*. The first item in it is `welcome-to-xod`. This is a special tutorial project you’re working with right now. Expand the project by clicking on it.\n\n2. As you can see, the tutorial consists of many patches. Right now, we are in patch `01-hello`. The next part of the tutorial is in patch `02-deploy`. Double-click it, and let's meet there!\n\nIf anything goes wrong or you have no idea what to do, we have [hints for every patch](https://xod.io/docs/tutorial/01-hello/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_01) on the web.",
+          "content": "¡Bienvenido a XOD, Maker! \ n \ nEn XOD, no usamos texto para codificar; en su lugar usamos objetos visuales. \n\nEsta gran área gris con cuadros es su programa. Se llama * parche *. En este parche, solo hay un objeto de interés: el nodo `led`, un rectángulo gris con pequeños círculos. Podrás hacer programas complicados usando estos rectángulos. \n\nPrimero, intenta mover el rectángulo. Su posición en el espacio de trabajo no afecta a su programa, pero puede hacerlo más legible. \n\n ## Instrucciones \n\n1. En el lado izquierdo, encontrará una lista de parches agrupados por un nombre de proyecto o biblioteca. La lista se llama * Explorador de proyectos *. El primer elemento que contiene es `welcome-to-xod`. Este es un proyecto de tutorial especial con el que estás trabajando en este momento. Expanda el proyecto haciendo clic en él. \n\n2. Como puede ver, el tutorial consta de muchos parches. Ahora mismo, estamos en el parche "01-hola". La siguiente parte del tutorial está en el parche `02-deploy`. ¡Haz doble clic en él y nos vemos allí! \n\nSi algo sale mal o no tienes idea de qué hacer, tenemos [sugerencias para cada parche] (https://xod.io/docs/tutorial/01-hello/utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_01) en la web.",
           "id": "SyzEUkjK-",
           "position": {
             "x": 0,
@@ -57,7 +57,7 @@
     "@/02-deploy": {
       "comments": {
         "Hy8uMWjtZ": {
-          "content": "Good! Now, let’s upload your patch with the `led` node to the Arduino!\n\n## Instructions\n\n1. Assemble a circuit according to the [scheme](https://xod.io/docs/tutorial/02-deploy/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_02), and connect the Arduino to your computer.\n\n2. Upload your first program. To do this, select Deploy → Upload to Arduino from the main menu.\n\nTo upload programs to the Arduino, you will need to install the desktop version of XOD. The browser version does not have permission to access the USB ports. Although you’re still able to upload XOD programs even from the browser version if you have the original Arduino IDE installed ([learn how](https://xod.io/docs/tutorial/02-deploy/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_02)).\n\nIf you did it the right way, you will see the LED turn on. Great! Proceed to the next lesson, patch `03-inspector`.",
+          "content": "¡Bueno! ¡Ahora, carguemos su parche con el nodo `led` al Arduino! \n\n ## Instrucciones \n\n1. Ensamble un circuito de acuerdo con el [esquema] (https://xod.io/docs/tutorial/02-deploy/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_02) y conecte el Arduino a su computadora. \n\n2. Sube tu primer programa. Para hacer esto, seleccione Implementar → Cargar a Arduino en el menú principal. \n\nPara cargar programas en Arduino, deberá instalar la versión de escritorio de XOD. La versión del navegador no tiene permiso para acceder a los puertos USB. Aunque aún puede cargar programas XOD incluso desde la versión del navegador si tiene instalado el IDE de Arduino original ([aprenda cómo] (https://xod.io/docs/tutorial/02-deploy/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_02)). \n\nSi lo hizo de la manera correcta, verá que el LED se enciende. ¡Excelente! Continúe con la siguiente lección, parche `03-inspector`.",
           "id": "Hy8uMWjtZ",
           "position": {
             "x": -4,
@@ -91,7 +91,7 @@
     "@/03-inspector": {
       "comments": {
         "H1nSnynt-": {
-          "content": "The LED is on because of the `led` node.\nA node is a visual representation of some physical device (such as the ports on an Arduino) or some function (adding, subtracting, or more complicated stuff).\n\nThe small colored circles on the nodes are called *pins*. Pins are divided into inputs and outputs. Inputs are always on the top side of the nodes, outputs on the bottom.\n\nThe `led` node is a simple LED-controlling node. It can control only one single-colored LED. The node has input pins `PORT` and `LUM` along with a few other pins you can ignore for now.\n\nPins are used to transfer data between nodes. Nodes process these values and take some action or give a result. In our case, the `led` node transfers the led brightnes value (set in `LUM`) to the Arduino port (set in `PORT`).\n\n## Instructions\n\n1. Click on the `led` node. You will see the Inspector under the list of projects. You can set the node parameters in the Inspector.\n\n2. In the Inspector, change the `LUM` value from 1 to 0.\n\n3. Upload the program to the Arduino. To do so, select Deploy → Upload to Arduino from the menu.\n\nThe LED will switch off after the upload because Arduino sent a value of 0 to the LED's pin. Physically speaking, it stopped delivering voltage to the pin.",
+          "content": "El LED está encendido debido al nodo `led`. \ NUn nodo es una representación visual de algún dispositivo físico (como los puertos en un Arduino) o alguna función (sumar, restar o cosas más complicadas). \n\nEl pequeños círculos de colores en los nodos se llaman * pines *. Los pines se dividen en entradas y salidas. Las entradas están siempre en la parte superior de los nodos, las salidas en la parte inferior. \n\nEl nodo `led` es un nodo de control de LED simple. Puede controlar solo un LED de un solo color. El nodo tiene pines de entrada `PORT` y` LUM` junto con algunos otros pines que puede ignorar por ahora. \n\nLos pines se utilizan para transferir datos entre nodos. Los nodos procesan estos valores y toman alguna acción o dan un resultado. En nuestro caso, el nodo `led` transfiere el valor de brillo del led (configurado en` LUM`) al puerto Arduino (configurado en `PORT`). \n\n ## Instrucciones \n\n1. Haga clic en el nodo `led`. Verá el Inspector debajo de la lista de proyectos. Puede configurar los parámetros del nodo en el Inspector. \n\n2. En el Inspector, cambie el valor de "LUM" de 1 a 0. \n\n3. Sube el programa al Arduino. Para hacerlo, seleccione Implementar → Cargar a Arduino en el menú. \n\nEl LED se apagará después de la carga porque Arduino envió un valor de 0 al pin del LED. Físicamente hablando, dejó de entregar voltaje al pin.",
           "id": "H1nSnynt-",
           "position": {
             "x": -2,
@@ -125,7 +125,7 @@
     "@/04-pwm": {
       "comments": {
         "BkVzdWnKW": {
-          "content": "The `LUM` pin on the `led` node accepts values between 0 and 1. The 0 value represents no glow at all, while a value of 1 denotes full brightness.\n\nHowever, you can adjust brightness level by setting values *between* 0 and 1 to the `LUM` pin.\n\n## Instructions\n\n1. Set the `LUM` pin to 0.4. To do this, click on the led node and type in the value in the Inspector.\n\n2. Upload the patch program to the Arduino.\n\nNow your LED is not glowing as bright as before. Feel free to try other values between 0 and 1 before moving on to the next step.\n",
+          "content": "El pin `LUM` en el nodo` led` acepta valores entre 0 y 1. El valor 0 representa ningún brillo, mientras que un valor de 1 denota brillo total. \n\nSin embargo, puede ajustar el nivel de brillo configurando valores * entre * 0 y 1 al pin `LUM`. \n\n ## Instrucciones \n\n1. Establezca el pin "LUM" en 0.4. Para hacer esto, haga clic en el nodo led y escriba el valor en el Inspector. \n\n2. Sube el programa del pathche al Arduino. \n\nAhora tu LED no brilla tanto como antes. No dude en probar otros valores entre 0 y 1 antes de pasar al siguiente paso. \n",
           "id": "BkVzdWnKW",
           "position": {
             "x": -2,
@@ -159,7 +159,7 @@
     "@/05-wiring": {
       "comments": {
         "BJ7AzfhK-": {
-          "content": "- `PORT` assigns the Arduino’s port to be used. The value should start with either `D` (digital) or `A` (analog).\n- `LUM` controls the brightness value. Should be between 0 and 1.",
+          "content": "- `PORT` asigna el puerto de Arduino que se utilizará. El valor debe comenzar con "D" (digital) o "A" (analógico). \n- "LUM" controla el valor de brillo. Debe estar entre 0 y 1.",
           "id": "BJ7AzfhK-",
           "position": {
             "x": 13,
@@ -173,7 +173,7 @@
           }
         },
         "rkZofM3KW": {
-          "content": "Now you know what `LUM` pin does.\nHowever, an LED could be connected to any digital port on an Arduino. So you need to inform the node of the port number that you are about to use. You can do it with the `PORT` pin.\n\n## Instructions\n\n1. Reconnect the LED to digital port 10 on Arduino ([scheme](https://xod.io/docs/tutorial/05-wiring/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_05)).\n2. Change the `PORT` pin value to D10 and the `LUM` value to 1.\n3. Upload your patch to the Arduino.\n\nThe LED should turn on at Arduino's port 10.\n",
+          "content": "Ahora ya sabes lo que hace el pin "LUM". \nSin embargo, un LED podría conectarse a cualquier puerto digital en un Arduino. Por lo tanto, debe informar al nodo del número de puerto que está a punto de usar. Puedes hacerlo con el pin `PORT`. \n\n ## Instrucciones \n\n1. Vuelva a conectar el LED al puerto digital 10 en Arduino ([esquema] (https://xod.io/docs/tutorial/05-wiring/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_05)). \n2. Cambie el valor del pin "PORT" a D10 y el valor "LUM" a 1. \ n3. Sube tu patch al Arduino. \n\nEl LED debería encenderse en el puerto 10 de Arduino. \n",
           "id": "rkZofM3KW",
           "position": {
             "x": -1,
@@ -207,7 +207,7 @@
     "@/06-adding-nodes": {
       "comments": {
         "Hy229X-hZ": {
-          "content": "Yet another way is the Quick Search feature:\n\n1. Press “I” key or *double-click* anywhere on the patch.\n2. Type what you are looking for.\n\nIt searches not only in nodes titles, but even in the nodes description, like a small and dumb built-in Google. ",
+          "content": "Otra forma más es la función de búsqueda rápida: \n\n1. Presione la tecla "I" o * haga doble clic * en cualquier lugar del parche. \n2. Escriba lo que está buscando. \n\nBusca no solo en los títulos de los nodos, sino incluso en la descripción de los nodos, como un pequeño y tonto Google integrado. ",
           "id": "Hy229X-hZ",
           "position": {
             "x": 11,

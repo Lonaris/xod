@@ -2,7 +2,7 @@
   "authors": [
     "Amperka team"
   ],
-  "description": "an ok project to test loading of broken libs",
+  "description": "un buen proyecto para probar la carga de bibliotecas rotas",
   "license": "",
   "name": "ok-project",
   "version": "0.0.0"

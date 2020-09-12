@@ -351,7 +351,7 @@
       "links": {},
       "comments": {},
       "path": "xod/core/console-log",
-      "description": "Outputs a line of text to the board standard debug interface",
+      "description": "Envía una línea de texto a la interfaz de depuración estándar de la placa",
       "attachments": [
         {
           "filename": "patch.cpp",
@@ -412,7 +412,7 @@
       "links": {},
       "comments": {},
       "path": "xod/core/buffer",
-      "description": "Permanently holds a single value",
+      "description": "Mantiene permanentemente un valor único",
       "attachments": [
         {
           "filename": "patch.cpp",
@@ -460,7 +460,7 @@
       "links": {},
       "comments": {},
       "path": "xod/core/cast-to-string(number)",
-      "description": "Transforms a number to string with two digits after dot",
+      "description": "Transforma un número en una cadena con dos dígitos después del punto",
       "attachments": [
         {
           "filename": "patch.cpp",

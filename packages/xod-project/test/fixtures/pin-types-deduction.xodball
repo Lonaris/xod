@@ -167,7 +167,7 @@
     "@/case3-top-to-bottom-invalid": {
       "comments": {
         "BJhH73Qjz": {
-          "content": "does not stop on error, valid ones are still resolved",
+          "content": "no se detiene en caso de error, los válidos aún se resuelven",
           "id": "BJhH73Qjz",
           "position": {
             "x": 306,
@@ -179,7 +179,7 @@
           }
         },
         "rk1fQ3QjG": {
-          "content": "does not propagete",
+          "content": "no se propaga",
           "id": "rk1fQ3QjG",
           "position": {
             "x": 102,
@@ -311,7 +311,7 @@
     "@/case4-bottom-to-top-invalid": {
       "comments": {
         "Sk2vd7h7jG": {
-          "content": "does not stop on error, valid ones are still resolved",
+          "content": "no se detiene en caso de error, los válidos aún se resuelven",
           "id": "Sk2vd7h7jG",
           "position": {
             "x": 544,
@@ -323,7 +323,7 @@
           }
         },
         "r1ovuQ27oG": {
-          "content": "does not propagete",
+          "content": "no se propaga",
           "id": "r1ovuQ27oG",
           "position": {
             "x": 102,

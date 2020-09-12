@@ -120,7 +120,7 @@
       },
       "comments": {
         "SJN8dGfmm": {
-          "content": "totally artificial example of a specialization that uses abstract nodes",
+          "content": "ejemplo totalmente artificial de una especialización que utiliza nodos abstractos",
           "id": "SJN8dGfmm",
           "position": {
             "x": 238,
@@ -137,7 +137,7 @@
     "@/if-else": {
       "nodes": {
         "HJFwO6FJm": {
-          "description": "Outputs value of `T` if `COND` is true, and `F` otherwise",
+          "description": "Muestra el valor de `T` si `COND` es verdadero y `F` en caso contrario",
           "label": "R",
           "id": "HJFwO6FJm",
           "position": {
@@ -147,7 +147,7 @@
           "type": "xod/patch-nodes/output-t1"
         },
         "HyzYvd6FJQ": {
-          "description": "Value to be output if condition is false",
+          "description": "Valor a emitir si la condición es falsa",
           "label": "F",
           "id": "HyzYvd6FJQ",
           "position": {
@@ -175,7 +175,7 @@
           "type": "xod/patch-nodes/input-boolean"
         },
         "Sy7twd6Yy7": {
-          "description": "Value to be output if condition is true",
+          "description": "Valor que se emitirá si la condición es verdadera",
           "label": "T",
           "id": "Sy7twd6Yy7",
           "position": {
@@ -197,7 +197,7 @@
       ],
       "nodes": {
         "BklL7OTtkQ": {
-          "description": "Condition value",
+          "description": "Valor de condición",
           "label": "COND",
           "id": "BklL7OTtkQ",
           "position": {
@@ -500,7 +500,7 @@
           "type": "@/less"
         },
         "Bk87LupFy7": {
-          "description": "The selected value. Equals to one of `Xi` input.",
+          "description": "El valor seleccionado. Es igual a una de las entradas de `Xi` .",
           "id": "Bk87LupFy7",
           "position": {
             "x": 101,
@@ -536,7 +536,7 @@
           "type": "@/subtract"
         },
         "SkE78daK1Q": {
-          "description": "Utility output needed for expanding node. Shoud be ignored by the end user.\n",
+          "description": "Salida de utilidad necesaria para expandir nodo. El usuario final debe ignorarlo.\n",
           "label": "_",
           "id": "SkE78daK1Q",
           "position": {
@@ -564,7 +564,7 @@
           "type": "xod/patch-nodes/input-t1"
         },
         "ry7XIOaYJX": {
-          "description": "Index to select. All values below 1 are considered to be 0. Values of 1 and above are considered to be 1.",
+          "description": "Índice para seleccionar. Todos los valores por debajo de 1 se consideran 0. Los valores de 1 y superiores se consideran 1.",
           "label": "IDX",
           "id": "ry7XIOaYJX",
           "position": {
@@ -806,7 +806,7 @@
           "type": "@/less"
         },
         "Bk87LupFy7": {
-          "description": "The selected value. Equals to one of `Xi` input.",
+          "description": "El valor seleccionado. Es igual a una de las entradas de  `Xi` .",
           "id": "Bk87LupFy7",
           "position": {
             "x": 101,
@@ -842,7 +842,7 @@
           "type": "@/subtract"
         },
         "SkE78daK1Q": {
-          "description": "Utility output needed for expanding node. Shoud be ignored by the end user.\n",
+          "description": "Salida de utilidad necesaria para expandir nodo. El usuario final debe ignorarlo.\n",
           "label": "_",
           "id": "SkE78daK1Q",
           "position": {
@@ -870,7 +870,7 @@
           "type": "@/input-vector-2d"
         },
         "ry7XIOaYJX": {
-          "description": "Index to select. All values below 1 are considered to be 0. Values of 1 and above are considered to be 1.",
+          "description": "Índice para seleccionar. Todos los valores por debajo de 1 se consideran 0. Los valores de 1 y superiores se consideran 1.",
           "label": "IDX",
           "id": "ry7XIOaYJX",
           "position": {

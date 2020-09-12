@@ -10,7 +10,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Sample current value",
+      "description": "Muestra de valor actual",
       "id": "sample",
       "position": {
         "units": "slots",
@@ -20,7 +20,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Sampled potentiometer value",
+      "description": "Valor de potenciómetro muestreado",
       "id": "value",
       "position": {
         "units": "slots",

@@ -43,7 +43,7 @@ export const saveArrangedFiles = R.curry((rootDir, virtualFile) => {
     if (typeof virtualFile !== 'object') {
       throw Object.assign(
         new Error(
-          "Can't save project: wrong data format was passed into save function."
+          "No se puede guardar el proyecto: se pasó un formato de datos incorrecto a la función de guardar."
         ),
         {
           path: realRootDir,

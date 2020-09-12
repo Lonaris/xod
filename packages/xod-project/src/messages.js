@@ -5,43 +5,43 @@ import { enumerate } from 'xod-func-tools';
 export default {
   // Patch
   INVALID_PATCH_PATH: ({ patchPath }) => ({
-    title: 'Invalid patch path',
-    note: `Path "${patchPath}" is empty or contains invalid characters`,
+    title: 'Ruta de path no válida',
+    note: `La ruta "${patchPath}" está vacía o contiene caracteres no válidos`,
   }),
   PATCH_NOT_FOUND_BY_PATH: ({ patchPath }) => ({
-    title: 'Patch not found',
-    note: `Can't find the patch in the project with specified path: "${patchPath}"`,
+    title: 'Patch no encontrado',
+    note: `No puedo encontrar el path en el proyecto con la ruta especificada: "${patchPath}"`,
   }),
   CANT_UPDATE_PATCH__PATCH_NOT_FOUND_BY_PATH: ({ patchPath }) => ({
-    title: "Can't update patch",
-    note: `Can't find the patch in the project with specified path: "${patchPath}"`,
+    title: "No se puede actualizar el patch",
+    note: `No puedo encontrar el patch en el proyecto con la ruta especificada: "${patchPath}"`,
   }),
   CANT_CLONE_PATCH__PATCH_NOT_FOUN_BY_PATH: ({ patchPath }) => ({
-    title: "Can't clone patch",
-    note: `Can't find the patch in the project with specified path: "${patchPath}"`,
+    title: "No se puede clonar el patch",
+    note: `No puedo encontrar el patch en el proyecto con la ruta especificada: "${patchPath}"`,
   }),
 
   // Generics, Abstracts and etc
   ALL_TYPES_MUST_BE_RESOLVED: ({ patchPath, currentPatchPath, trace }) => ({
-    title: 'Project contains unresolved abstract patches',
-    note: `Patch "${currentPatchPath}" contains an Abstract Node "${patchPath}" that can't be resolved`,
+    title: 'El proyecto contiene patchs abstractos sin resolver',
+    note: ` El patch "${currentPatchPath}" contiene un nodo abstracto "${patchPath}" que no se puede resolver`,
     trace,
   }),
   GENERIC_TERMINALS_REQUIRED: ({ trace }) => ({
-    title: 'Invalid abstract patch',
-    note: 'At least one generic terminal is required',
+    title: 'Parche abstracto no válido',
+    note: 'Se requiere al menos un terminal genérico',
     trace,
   }),
   ORPHAN_GENERIC_OUTPUTS: ({ trace, types }) => ({
-    title: 'Invalid abstract patch',
-    note: `For each generic output there has to be at least one generic input of the same type. Create ${types
+    title: 'Parche abstracto no válido',
+    note: `Para cada salida genérica debe haber al menos una entrada genérica del mismo tipo. Crear ${types
       .map(x => `input-${x}`)
       .join(', ')}`,
     trace,
   }),
   NONSEQUENTIAL_GENERIC_TERMINALS: ({ trace, types }) => ({
-    title: 'Invalid abstract patch',
-    note: `Generic inputs should be employed sequentially. Use ${types.join(
+    title: 'Parche abstracto no válido',
+    note: `Las entradas genéricas deben emplearse de forma secuencial. Utilice ${types.join(
       ', '
     )}`,
     trace,
@@ -51,10 +51,10 @@ export default {
     expectedSpecializationName,
     trace,
   }) => ({
-    title: 'Specialization patch not found',
-    note: `Cannot find specialization ${expectedSpecializationName} for abstract ${patchPath}.`,
+    title: 'No se encontró el parche de especialización',
+    note: `No se puede encontrar la especialización ${expectedSpecializationName} para el resumen ${patchPath}.`,
     solution:
-      'Try creating the missing patch in your project or install a library which provides such one.',
+      'Intente crear el parche que falta en su proyecto o instale una libreria que proporcione uno.',
     trace,
   }),
   CONFLICTING_SPECIALIZATIONS_FOR_ABSTRACT_PATCH: ({
@@ -62,8 +62,8 @@ export default {
     conflictingSpecializations,
     trace,
   }) => ({
-    title: `Conflicting specializations for abstrat patch ${patchPath}`,
-    note: `To continue, explicitly switch to ${enumerate(
+    title: `Especializaciones en conflicto para el parche abstracto ${patchPath}`,
+    note: `Para continuar, cambie explícitamente a ${enumerate(
       ', ',
       ' or ',
       conflictingSpecializations
@@ -71,40 +71,40 @@ export default {
     trace,
   }),
   SPECIALIZATION_PATCH_CANT_BE_ABSTRACT: ({ trace }) => ({
-    title: 'This error should not be visible to end user yet',
+    title: 'Este error aún no debería ser visible para el usuario final',
     trace,
   }),
   SPECIALIZATION_PATCH_MUST_HAVE_SAME_ARITY_LEVEL: ({ trace }) => ({
-    title: 'This error should not be visible to end user yet',
+    title: 'Este error aún no debería ser visible para el usuario final',
     trace,
   }),
   SPECIALIZATION_PATCH_CANT_HAVE_GENERIC_PINS: ({ trace }) => ({
-    title: 'This error should not be visible to end user yet',
+    title: 'Este error aún no debería ser visible para el usuario final',
     trace,
   }),
   SPECIALIZATION_PATCH_MUST_HAVE_N_INPUTS: ({ trace }) => ({
-    title: 'This error should not be visible to end user yet',
+    title: 'Este error aún no debería ser visible para el usuario final',
     trace,
   }),
   SPECIALIZATION_PATCH_MUST_HAVE_N_OUTPUTS: ({ trace }) => ({
-    title: 'This error should not be visible to end user yet',
+    title: 'Este error aún no debería ser visible para el usuario final',
     trace,
   }),
   SPECIALIZATION_STATIC_PINS_DO_NOT_MATCH: ({ trace }) => ({
-    title: 'This error should not be visible to end user yet',
+    title: 'Este error aún no debería ser visible para el usuario final',
     trace,
   }),
   SPECIALIZATION_HAS_CONFLICTING_TYPES_FOR_GENERIC: ({ trace }) => ({
-    title: 'This error should not be visible to end user yet',
+    title: 'Este error aún no debería ser visible para el usuario final',
     trace,
   }),
   SPECIALIZATION_HAS_WRONG_NAME: ({ trace }) => ({
-    title: 'This error should not be visible to end user yet',
+    title: 'Este error aún no debería ser visible para el usuario final',
     trace,
   }),
   NO_DEDUCED_TYPES_FOUND_FOR_GENERIC_NODE: ({ trace }) => ({
-    title: "Can't deduce types for patch",
-    solution: 'Connect links or bind values to generic inputs',
+    title: "No se pueden deducir los tipos de parche",
+    solution: 'Conectar enlaces o vincular valores a entradas genéricas',
     trace,
   }),
   CONFLICTING_TYPES_FOR_NODE: ({
@@ -112,41 +112,41 @@ export default {
     genericPinType,
     conflictingTypes,
   }) => ({
-    title: 'Generic types don’t match',
+    title: 'Los tipos genéricos no coinciden',
     note: `Types ${enumerate(
       ', ',
       ' and ',
       conflictingTypes
     )} conflict; ${genericPinType} can’t be resolved unambiguously.`,
     solution:
-      'Either add nodes to a single type, or switch to a particular node specialization.',
+      'Agregue nodos a un solo tipo o cambie a una especialización de nodo en particular.',
     trace,
   }),
   UNRESOLVED_GENERIC_PIN: ({ trace, unresolvedPinType }) => ({
-    title: "Can't resolve type for pin",
-    note: `Pin with type ${unresolvedPinType} can't be resolved`,
-    solution: `Connect a link or bind a value to it`,
+    title: "No se puede resolver el tipo para el pin",
+    note: `El pin con el tipo ${unresolvedPinType} no se puede resolver`,
+    solution: `Conectar un enlace o vincularle un valor`,
     trace,
   }),
   UNRESOLVED_ABSTRACT_NODES_LEFT: ({ unresolvedNodeTypes }) => ({
-    title: 'Project contains unresolved abstract nodes',
-    note: `Make sure node${
+    title: 'El proyecto contiene nodos abstractos sin resolver',
+    note: `Asegúrese de que el nodo${
       unresolvedNodeTypes.lenght === 1 ? '' : 's'
-    } ${enumerate(', ', ' and ', unresolvedNodeTypes)} ${
-      unresolvedNodeTypes.lenght === 1 ? 'is' : 'are'
-    } linked`,
+    } ${enumerate(', ', ' y ', unresolvedNodeTypes)} ${
+      unresolvedNodeTypes.lenght === 1 ? 'is' : 'son'
+    } vinculado`,
   }),
 
   // Constructor patches
   CONSTRUCTOR_PATCH_CANT_HAVE_GENERIC_PINS: ({ trace }) => ({
-    title: 'Invalid constructor patch',
-    note: "Constructor patches can't have generic pins",
+    title: 'Parche de constructor no válido',
+    note: "Los parches de constructor no pueden tener pines genéricos",
     trace,
   }),
   CONSTRUCTOR_PATCH_MUST_BE_NIIX: ({ trace }) => ({
-    title: 'Invalid constructor patch',
-    note: 'Constructor patches must be implemented in C++',
-    solution: 'Add a not-implemented-in-xod node and provide an implementation',
+    title: 'Parche de constructor no válido',
+    note: 'Los parches de constructor deben implementarse en C ++ ',
+    solution: 'Agregue un nodo no implementado en xod y proporcione una implementación',
     trace,
   }),
 
@@ -186,17 +186,17 @@ export default {
 
   // Transpile
   IMPLEMENTATION_NOT_FOUND: ({ patchPath, trace }) => ({
-    title: 'No implementation found in leaf patch',
-    note: `No implementation for ${patchPath} found.`,
+    title: 'No se encontró implementación en el parche de hoja',
+    note: `No se encontró ninguna implementación para ${patchPath} .`,
     trace,
   }),
   CPP_AS_ENTRY_POINT: ({ patchPath }) => ({
-    title: "Can't transpile selected Patch",
-    note: `Can’t use patch "${patchPath}" as entry point, cause it is not implemented in XOD`,
+    title: "No se puede transpilar el parche seleccionado",
+    note: `No se puede usar el patch "${patchPath}" como punto de entrada, porque no está implementado en XOD`,
   }),
   ABSTRACT_AS_ENTRY_POINT: ({ patchPath }) => ({
-    title: "Can't transpile selected Patch",
-    note: `Can’t use abstract patch "${patchPath}" as entry point`,
+    title: "No se puede transpilar el parche seleccionado",
+    note: `No se puede utilizar el parche abstracto "${patchPath}" como punto de entrada`,
   }),
   ENTRY_POINT_PATCH_NOT_FOUND_BY_PATH: ({ patchPath }) => ({
     title: 'Entry point patch not found',
@@ -205,13 +205,13 @@ export default {
 
   // Project validation
   LINK_INPUT_NODE_NOT_FOUND: ({ trace }) => ({
-    title: 'Invalid link',
-    note: 'Input node of the link does not exist in this patch',
+    title: 'Enlace no válido',
+    note: 'El nodo de entrada del enlace no existe en este patch',
     trace,
   }),
   LINK_OUTPUT_NODE_NOT_FOUND: ({ trace }) => ({
-    title: 'Invalid link',
-    note: 'Output node of the link does not exist in this patch',
+    title: 'Enlace no válido',
+    note: 'El nodo de salida del enlace no existe en este patch',
     trace,
   }),
   INCOMPATIBLE_PINS__CANT_CAST_TYPES_DIRECTLY: ({
@@ -219,100 +219,100 @@ export default {
     toType,
     trace,
   }) => ({
-    title: 'Program contains bad links',
-    note: `Type ${fromType} can’t cast to ${toType} directly.`,
-    solution: `Replace bad links with nodes that explicitly convert ${fromType} to ${toType}`,
+    title: 'El programa contiene enlaces incorrectos',
+    note: `El tipo ${fromType} no se puede convertir a ${toType} directamente.`,
+    solution: `Reemplace los enlaces defectuosos con nodos que conviertan explícitamente ${fromType} a ${toType}`,
     trace,
   }),
   INCOMPATIBLE_PINS__LINK_CAUSES_TYPE_CONFLICT: ({ types, trace }) => ({
-    title: 'Program contains bad links',
-    note: `Link causes type conflict between ${enumerate(
+    title: 'El programa contiene enlaces incorrectos',
+    note: `El enlace provoca un conflicto de tipos entre ${enumerate(
       ', ',
-      ' and ',
+      ' y ',
       types
     )}`,
     trace,
     // TODO: Add a solution
   }),
   DEAD_REFERENCE__PINS_NOT_FOUND: ({ pinKey, patchPath, trace }) => ({
-    title: 'Dead reference error',
-    note: `Can't find the Pin "${pinKey}" in the patch with path "${patchPath}"`,
+    title: 'Error de referencia roto',
+    note: `No puedo encontrar el Pin "${pinKey}" en el parche con la ruta "${patchPath}"`,
     trace,
   }),
   CLASHING_PIN_LABELS: ({ label, pinKeys, trace }) => ({
-    title: 'Clashing pin names',
-    note: `${pinKeys.length} pins are named ${label}`,
-    solution: 'Give the pins unique names',
+    title: 'Enfrentarse nombres de pin',
+    note: `Los pines de ${pinKeys.length} se llaman ${label}`,
+    solution: 'Dar a los pines nombres únicos',
     trace,
   }),
   DEAD_REFERENCE__PATCH_FOR_NODE_NOT_FOUND: ({ nodeType, trace }) => ({
-    title: 'Dead reference error',
-    note: `Patch "${nodeType}" is not found in the project`,
+    title: 'Error de referencia roto',
+    note: `El patch "${nodeType}" no se encuentra en el proyecto`,
     trace,
   }),
   DEAD_REFERENCE__NODE_NOT_FOUND: ({ nodeId, patchPath, trace }) => ({
-    title: 'Dead reference error',
-    note: `Can't find the Node "${nodeId}" in the patch with path "${patchPath}"`,
+    title: 'Error de referencia roto',
+    note: `No puedo encontrar el nodo "${nodeId}" en el parche con la ruta "${patchPath}"`,
     trace,
   }),
   INVALID_LITERAL_BOUND_TO_PIN: ({ pinName, literal, trace }) => ({
-    title: 'Bad literal value',
-    note: `Value ${literal} bound to ${pinName} is invalid.`,
-    solution: `If you meant a string, surround it with double quotes: "${literal}".`,
+    title: 'Valor literal incorrecto',
+    note: `El valor ${literal} vinculado a ${pinName} no es válido.`,
+    solution: `Si te refieres a una cadena, escríbela entre comillas dobles: "${literal}".`,
     trace,
   }),
   LOOPS_DETECTED: () => ({
-    title: 'Loops detected',
-    note: 'The program has a cycle',
-    solution: 'Use xod/core/defer node to break the cycle',
+    title: 'Bucles detectados',
+    note: 'El programa tiene un ciclo',
+    solution: 'Use el nodo xod/core/defer para romper el ciclo',
   }),
   BAD_LITERAL_VALUE: ({ value }) => ({
-    title: 'Bad literal value',
-    note: `${value} is not a valid literal`,
-    solution: `If you meant a string, surround it with double quotes: "${value}".`,
+    title: 'Valor literal incorrecto',
+    note: `${value} no es un literal válido`,
+    solution: `Si te refieres a una cadena, escríbela entre comillas dobles: "${value}".`,
   }),
 
   ORPHAN_FROM_BUS_NODES: ({ label, trace }) => ({
-    title: 'No bus source',
+    title: 'Sin fuente de bus',
     trace,
-    note: `Bus '${label}' does not exist`,
-    solution: `Create a 'to-bus' node with label '${label}' to define the required bus.`,
+    note: `El bus '${label}' no existe`,
+    solution: `Cree un nodo 'to-bus' con la etiqueta '${label}' para definir el bus requerido.`,
   }),
   CONFLICTING_TO_BUS_NODES: ({ label, trace }) => ({
-    title: 'Multiple bus sources',
+    title: 'Varias fuentes de bus',
     trace,
-    note: `Bus '${label}' has multiple conflicting sources`,
-    solution: `Delete or rename one of 'to-bus' nodes so that the bus gets a single source of data.`,
+    note: `El bus '${label}' tiene varias fuentes en conflicto`,
+    solution: `Elimine o cambie el nombre de uno de los nodos 'to-bus' para que el bus obtenga una única fuente de datos.`,
   }),
   FLOATING_TO_BUS_NODES: ({ label, trace }) => ({
-    title: 'Bus floats',
+    title: 'El bus flota',
     trace,
-    note: `Bus '${label}' source is not linked anywhere`,
-    solution: `Link the 'to-bus' node with label '${label}' to an output pin of another node.`,
+    note: `La fuente del buss '${label}' no está vinculada a alguna parte`,
+    solution: `Vincula el nodo 'to-bus' con la etiqueta '${label}' a un pin de salida de otro nodo.`,
   }),
 
   // Patch rebasing
   CANT_REBASE_PATCH__OCCUPIED_PATH: ({ newPath }) => ({
-    title: `Can't rebase patch`,
-    note: `Another patch with path "${newPath}" already exists.`,
-    solution: 'Rename or delete existing patch before',
+    title: `No se puede cambiar la base del parche`,
+    note: `Ya existe otro parche con la ruta "${newPath}" .`,
+    solution: 'Cambiar el nombre o eliminar el parche existente antes de',
   }),
   CANT_REBASE_PATCH__BUILT_IN_PATCH: ({ oldPath }) => ({
-    title: "Can't rebase patch",
-    note: `Can't rebase built-in patch "${oldPath}"`,
+    title: "No se puede cambiar la base del parche",
+    note: `No se puede cambiar la base del parche integrado "${oldPath}"`,
   }),
   CANT_REBASE_PATCH__PATCH_NOT_FOUND_BY_PATH: ({ oldPath }) => ({
-    title: `Can't rebase patch`,
-    note: `Can't find the patch in the project with specified path: "${oldPath}"`,
+    title: `No se puede cambiar la base del parche`,
+    note: `No se puede encontrar el parche en el proyecto con la ruta especificada: "${oldPath}"`,
   }),
 
   // Load project
   INVALID_XODBALL_FORMAT: () => ({
-    title: 'Invalid xodball format',
-    note: 'File that you try to load is corrupted and has a wrong structure',
+    title: 'Formato de xodball no válido',
+    note: 'El archivo que intenta cargar está dañado y tiene una estructura incorrecta',
   }),
   NOT_A_JSON: () => ({
-    title: 'Not a JSON format',
-    note: 'File that you try to load is not in a JSON format',
+    title: 'No es un formato JSON',
+    note: 'El archivo que intenta cargar no está en formato JSON',
   }),
 };

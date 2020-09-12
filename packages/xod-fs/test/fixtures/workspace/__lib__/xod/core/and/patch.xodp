@@ -30,7 +30,7 @@
       "type": "xod/patch-nodes/input-boolean"
     },
     {
-      "description": "\"true\" if both inputs are \"true\"",
+      "description": "\"verdadero\" si ambas entradas son \"verdadero\"",
       "id": "out",
       "label": "output",
       "position": {

@@ -41,7 +41,7 @@
     "@/foo(vector-2d)": {
       "comments": {
         "SJN8dGfmm": {
-          "content": "totally artificial example of a specialization that uses abstract nodes",
+          "content": "ejemplo totalmente artificial de una especialización que utiliza nodos abstractos",
           "id": "SJN8dGfmm",
           "position": {
             "x": 238,

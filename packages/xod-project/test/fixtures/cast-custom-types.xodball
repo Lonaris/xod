@@ -300,7 +300,7 @@
       "path": "@/test-no-cast-node"
     },
     "xod/color/color": {
-      "description": "Color type constructor",
+      "description": "Constructor de tipo de color",
       "nodes": {
         "output-self": {
           "id": "output-self",
@@ -331,7 +331,7 @@
       "path": "xod/color/color"
     },
     "xod/color/color-hsl": {
-      "description": "Constructs a color value from hue, saturation, and lightness values (HSL model)",
+      "description": "Construye un valor de color a partir de los valores de tono, saturación y luminosidad (modelo HSL)",
       "nodes": {
         "output-color": {
           "id": "output-color",
@@ -343,7 +343,7 @@
           "type": "xod/color/output-color"
         },
         "input-hue": {
-          "description": "0 is for red, 0.33 for green, 0.66 for blue, and 0.99 is for red again. Some systems use degrees for the hue component. The value of 1.0 corresponds to 360° of such systems. When out out of [0; 1) range only the fractional part is taken into account",
+          "description": "0 es para rojo, 0.33 para verde, 0.66 para azul y 0.99 es para rojo nuevamente. Algunos sistemas usan grados para el componente de tono. El valor de 1.0 corresponde a 360 ° de tales sistemas. Cuando está fuera de [0; 1) rango solo se tiene en cuenta la parte fraccionaria",
           "id": "input-hue",
           "label": "H",
           "position": {
@@ -366,7 +366,7 @@
           "boundLiterals": {
             "__out__": "1"
           },
-          "description": "Saturation. Should be in the range [0, 1]. 0.0 corresponds to fully-gray shade and 1.0 to saturated color shade. Values out of the range are truncated to 0 or 1",
+          "description": "Saturación. Debe estar en el rango [0, 1]. 0.0 corresponde a un tono completamente gris y 1.0 a un tono de color saturado. Los valores fuera del rango se truncan a 0 o 1",
           "id": "input-sat",
           "label": "S",
           "position": {
@@ -380,7 +380,7 @@
           "boundLiterals": {
             "__out__": "0.5"
           },
-          "description": "Lightness. Should be in the range [0, 1]. 0.0 corresponds to black; 0.5 to pure color; 1.0 to white. Values out of the range are truncated to 0 or 1",
+          "description": "luminosidad. Debe estar en el rango [0, 1]. 0.0 corresponde a negro; 0,5 hasta color puro; 1.0 a blanco. Los valores fuera del rango se truncan a 0 o 1",
           "id": "input-lightness",
           "label": "L",
           "position": {
@@ -401,7 +401,7 @@
       "path": "xod/color/color-hsl"
     },
     "xod/color/format-color": {
-      "description": "Formats a color as a 6-digit hexadecimal value (ex.: \"FF3300\")",
+      "description": "Formatea un color como un valor hexadecimal de 6 dígitos (ej.: \"FF3300\")",
       "nodes": {
         "output-string": {
           "id": "output-string",
@@ -441,7 +441,7 @@
       "path": "xod/color/format-color"
     },
     "xod/debug/watch": {
-      "description": "Shows incoming values in the realtime, when a debug session is active",
+      "description": "Muestra los valores entrantes en tiempo real, cuando una sesión de depuración está activa",
       "nodes": {
         "niix": {
           "id": "niix",
@@ -472,7 +472,7 @@
       "path": "xod/debug/watch"
     },
     "xod/net/ip-address": {
-      "description": "Assembles an IP address from 4 octets",
+      "description": "Ensambla una dirección IP de 4 octetos",
       "path": "xod/net/ip-address",
       "attachments": [
         {
