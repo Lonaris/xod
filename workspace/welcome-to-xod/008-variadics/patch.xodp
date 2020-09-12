@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "# Variadic Nodes\n\nCheck out the `or` node on this patch. In the previous lesson we saw that it has just two inputs, but now it has four! That's because some of the nodes in XOD are *variadic* — you can change their number of inputs.\n\nVariadic nodes can be recognized by the handle on the right side. Also, their pins are marked as “variadic” in the help panels.\n\n## Exercise\n\nLet’s learn how to adjust the number of inputs.\n\n1. Hover over the right side of the `add` node. Your cursor should become a double arrow.\n2. Click and drag to the right to add more inputs.\n3. Use the new inputs to link the “11” `tweak-number`, bind some values to others.\n\nAs you guess, `add` will sum all the inputs it got. Run the simulation to verify.",
+      "content": "# Nodos Variadic\n\nVerifique el nodo `or` en este patch. En la lección anterior vimos que solo tiene dos entradas, ¡pero ahora tiene cuatro! Esto se debe a que algunos de los nodos en XOD son * variadic *; puede cambiar su número de entradas.\n\nLos nodos variadic pueden ser reconocidos por el controlador en el lado derecho. Además, sus pines están marcados como “variadic” en los paneles de ayuda.\n\n ## Ejercicio\n\nAprendamos cómo ajustar el número de entradas.\n\n1. Coloca el cursor sobre el lado derecho del nodo `add` Su cursor debería convertirse en una flecha doble.\n2. Haga clic y arrastre hacia la derecha para agregar más entradas.\n3. Utilice las nuevas entradas para vincular el “11” `tweak-number`, vincular algunos valores a otros.\n\nComo supondrá, `add` sumará todas las entradas que obtuvo. Ejecute la simulación para verificar.",
       "id": "H19EghQpvE",
       "position": {
         "units": "slots",

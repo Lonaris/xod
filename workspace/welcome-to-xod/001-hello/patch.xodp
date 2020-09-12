@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "## 👆 Web hints\n\nIf anything goes wrong or you have no idea what to do, we have [hints for every patch](https://xod.io/docs/tutorial/001-hello/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial) on the web.",
+      "content": "## 👆 Sugerencias web\n\nSi algo sale mal o no tiene idea de qué hacer, tenemos [sugerencias para cada patch](https://xod.io/docs/tutorial/001-hello/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial) en la web.",
       "id": "BJjRza-cE",
       "position": {
         "units": "slots",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "content": "# Welcome to XOD, Maker! \n\nIn XOD, we do not use text to code; we use visual objects instead.\n\nThis large gray area with boxes is your program. It's called a *patch*. Patches are like documents or source files in other systems.\n\nSeveral related patches form a *project*. Currently you are working on a project named `welcome-to-xod`.\n\n## Exercise\n\nLet’s learn how to navigate a project.\n\n1. On the left-hand side, you will find a list of patches grouped by a project or library name. The list is called a *Project Browser*. The first item in it is `welcome-to-xod`. Expand the project by clicking on it.\n\n2. As you can see, the tutorial consists of many patches. Right now, you are in the patch `001-hello`. The next chapter of the tutorial is in the patch `002-simulate`. Double-click it, and let's meet there!",
+      "content": "# Bienvenido a XOD, Maker! \n\nEn XOD, no usamos texto para codificar; en su lugar usamos objetos visuales.\n\nEsta gran área gris con cuadros es su programa. Se llama * patch *. Los patchs son como documentos o archivos fuente en otros sistemas.\n\nVarios patchs relacionados forman un * proyecto *. Actualmente estás trabajando en un proyecto llamado `bienvenido a xod`.\n\n## Ejercicio\n\nAprendamos a navegar por un proyecto.\n\n1. En el lado izquierdo, encontrará una lista de patchs agrupados por un nombre de proyecto o biblioteca. La lista se llama * Explorador de proyectos *. El primer elemento que contiene es `bienvenido a xod`. Expanda el proyecto haciendo clic en él.\n\n2. Como puede ver, el tutorial consta de muchos patchs. Ahora mismo estás en el patche `001-hello`. El siguiente capítulo del tutorial está en el parche `002-simulate`. ¡Haz doble clic en él y nos vemos allí!",
       "id": "ry7eOGTwE",
       "position": {
         "units": "slots",

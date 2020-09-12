@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "Welcome to XOD again!\n\nDid you complete the built-in tutorial? We recommend you to do it:\n\n»»                                                              ««\n»»»»              [Open Built-in Tutorial Project](xod://actions/open-tutorial)              ««««\n»»                                                              ««\n\nStarting a new project? Delete this comment and start tinkering.\nOr use “File” menu to open an existing project. If you ever need\na controller board, sensors, or hardware modules for the project\npick everything you need at [amperka.com](https://amperka.com/?utm_source=xod&utm_campaign=embed&utm_medium=ide)",
+      "content": "¡Bienvenido a XOD de nuevo!\n\n¿Completaste el tutorial incorporado? Te recomendamos que lo hagas:\n\n»»                                                              ««\n»»»»         [Abrir proyecto de tutorial integrado](xod://actions/open-tutorial)           ««««\n»»                                                              ««\n\n¿Iniciando un nuevo proyecto? Elimina este comentario y empieza a retocar. O use el menú “Archivo” para abrir un proyecto existente. Si tu alguna vez necesita una placa controladora, sensores o módulos \nde hardware para el proyecto elige todo lo que necesitas en [amperka.com](https://amperka.com/?utm_source=xod&utm_campaign=embed&utm_medium=ide)",
       "id": "HyZlIT6Bf",
       "position": {
         "units": "slots",

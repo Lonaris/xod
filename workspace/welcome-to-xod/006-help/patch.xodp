@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "# Getting Help\n\nBy now you should be a bit bored by the `clock` and `counter`. XOD offers many more nodes to work with and yet more [nodes are shared by the community](https://xod.io/libs/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial) members. What a node does is described with a short annotation carried with the node. Your discovery starts with reading these descriptions.\n\n## Exercise\n\nLet's learn a few ways to see nodes’ descriptions.\n\n1. Scroll to the `xod/math` section in the Project Browser and click to expand it.\n2. Click on the `clip` patch, and then press the H key. A help box with the description will appear.\n3. Click on another patch. Help panel will move and show a description for it.\n4. Select some node on the patch board and press the H key. Quick Help panel will appear at the right side of the patch board.\n\nDiscover a few more nodes bundled within the XOD standard library.",
+      "content": "# Obteniendo ayuda\n\nA estas alturas debería estar un poco aburrido con el `clock` y `counter`. XOD ofrece muchos más nodos con los que trabajar y aún más [los nodos son compartidos por los miembros de comunidad](https://xod.io/libs/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial) . Lo que hace un nodo se describe con una breve anotación que se lleva con el nodo. Su descubrimiento comienza con la lectura de estas descripciones.\n\n## Ejercicio\n\nAprendamos algunas formas de ver las descripciones de los nodos.\n\n1. Desplácese hasta la sección `xod/math` en el Navegador de proyectos y haga clic para expandirla.\n2. Haga clic en el patch  `clip` , y luego presione la tecla H. Aparecerá un cuadro de ayuda con la descripción.\n3. Haga clic en otro patch. El panel de ayuda se moverá y mostrará una descripción.\n4. Seleccione algún nodo en el tablero de conexiones y presione la tecla H. El panel de Ayuda rápida aparecerá en el lado derecho del tablero de conexiones.\n\nDescubre algunos nodos más incluidos en la biblioteca estándar XOD.",
       "id": "Hy25Dd0wE",
       "position": {
         "units": "slots",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "content": "## 👆 Help while searching\n\nAs you probably noticed from previous lessons, the help boxes also automatically appear when using Suggester.",
+      "content": "## 👆 Ayuda durante la búsqueda\n\nComo probablemente haya notado en lecciones anteriores, los cuadros de ayuda también aparecen automáticamente al usar Suggester",
       "id": "SycXweWYV",
       "position": {
         "units": "slots",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "content": "## Extra exercise\n\nUsing all the knowledge you have up to this moment, try to make a program which shows a cosine of a continuously increasing angle. Math is beautiful!",
+      "content": "##  Ejercicio extra\n\nUsando todo el conocimiento que tiene hasta este momento, intente hacer un programa que muestre un coseno de un ángulo que aumenta continuamente. ¡Las matemáticas son hermosas! ",
       "id": "rJdie0Z9E",
       "position": {
         "units": "slots",

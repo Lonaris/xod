@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "# Flip-flops\n\nYou can control the behavior of many nodes with pulses. A very useful node is `flip-flop`. It acts like a virtual switch, whose states can be controlled by pulses. A pulse on `SET` turns the stored `MEM` value to true. `RST` resets `MEM` to false. And a pulse on `TGL` inverses the `MEM` value.\n\nThe patch shown here toggles the output boolean value each second.\n\n## Exercise\n\nLet’s experiment with the `flip-flop` node.\n\n1. Replace `clock` node with `tweak-pulse` node.\n2. Add a couple more `tweak-pulse`s and connect them to `flip-flop`'s `SET` and `RST` pins.\n3. Run the simulation, and send pulses to each pin\n\nObserve how the `MEM` value changes when sending several pulses to the same pin in a row.\n",
+      "content": "# Flip-flops\n\nPuedes controlar el comportamiento de muchos nodos con pulsos. Un nodo muy útil es `flip-flop`. Actúa como un interruptor virtual, cuyos estados se pueden controlar mediante pulsos. Un pulso en `SET` convierte el valor almacenado de `MEM` en verdadero. `RST` restablece` MEM` a falso. Y un pulso en `TGL` invierte el valor de `MEM`.\n\nEl patch que se muestra aquí alterna el valor booleano de salida cada segundo.\n\n ## Ejercicio\n\nExperimentamos con el nodo  `flip-flop`.\n\n1. Reemplace el nodo `clock` con el nodo `tweak-pulse`.\n2. Agregue un par más de `tweak-pulse` y conéctelos a los pines `SET` y `RST` de `flip-flop`.\n3. Ejecute la simulación y envíe pulsos a cada pin\n\nObserve cómo cambia el valor `MEM` cuando se envían varios pulsos al mismo pin seguidos.\n",
       "id": "SyRmtuAw4",
       "position": {
         "units": "slots",
@@ -9,7 +9,7 @@
         "y": 0
       },
       "size": {
-        "height": 5,
+        "height": 7,
         "units": "slots",
         "width": 7
       }

@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "# Booleans\n\nIn previous lessons we mostly dealt with numbers adjusting counter step and clock interval. Now let's talk about *booleans*. They have only two possible values:\n\n- *True* (aka logic one, high signal)\n- *False* (aka logic zero, low signal)\n\nBooleans are extremely useful and common. They may be used to indicate whether some condition is met, should a device be on or off, did some operation succeed, etc.\n\n## Exercise\n\nLet’s learn how boolean values can be combined.\n\n1. Read the descriptions for `and`, `or` and `not` nodes.\n2. Guess what the output value of `and` will be.\n3. Run the simulation to confirm it.\n4. Use `tweak-boolean` nodes to change it to the opposite value.\n\nCheck out descriptions for `nand`, `nor` and `xor` nodes. Add them onto the patch along with some additional tweaks to make a more complex processing.",
+      "content": "# Booleanos\n\nEn lecciones anteriores tratamos principalmente con números que ajustan el paso del contador y el intervalo del reloj. Ahora hablemos de * booleanos *. Solo tienen dos valores posibles:\n\n- * True * (también conocido como uno lógico, señal alta)\n- * False * (también conocido como cero lógico, señal baja)\n\nLos booleanos son extremadamente útiles y comunes. Se pueden usar para indicar si se cumple alguna condición, si un dispositivo está encendido o apagado, si alguna operación tuvo éxito, etc.\n\n ## Ejercicio\n\nAprendamos cómo se pueden combinar los valores booleanos.\n\n1 . Lea las descripciones de los nodos `and`, `or` y `not` .\n2. Adivina cuál será el valor de salida de `and` .\n3.  Ejecute la simulación para confirmarla.\n4. Utilice los nodos `tweak-boolean` para cambiarlo al valor opuesto.\n\nConsulte las descripciones de los nodos `nand`, `nor` y `xor` . Agréguelos al patch junto con algunos ajustes adicionales para hacer un procesamiento más complejo.",
       "id": "ByANvORwN",
       "position": {
         "units": "slots",
@@ -9,13 +9,13 @@
         "y": 0
       },
       "size": {
-        "height": 6,
+        "height": 7,
         "units": "slots",
         "width": 7
       }
     },
     {
-      "content": "## 👆 Ladder logic\n\nIf one would use binary sensors like buttons or mechanic switches as a source of boolean values and relays instead of watches, he can use XOD to program PLC devices resembling the ladder programming which is common in industrial applications.",
+      "content": "## 👆 Lógica de escalera\n\nSi uno usa sensores binarios como botones o interruptores mecánicos como fuente de valores booleanos y relés en lugar de relojes, puede usar XOD para programar dispositivos PLC que se asemejen a la programación de escalera que es común en aplicaciones industriales.",
       "id": "SJgSLRb9V",
       "position": {
         "units": "slots",

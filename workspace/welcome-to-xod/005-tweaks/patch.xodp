@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "# Tweaks\n\nRestarting a program every time you change a value in the Inspector is inconvenient.\nWith `tweak-*` nodes, you can adjust values while the program is running.\n\nOn the current patch we added a `tweak-number` linked to `IVAL` already.\n\n## Exercise\n\nLet’s learn how to add new tweaks to your program and control them in runtime.\n\n1. Add `tweak-number` node to the patch.\n2. Link `tweak-number`'s output pin to `count`'s `STEP` pin.\n3. Start the simulation.\n4. Double click the tweak node; the text box for tweak value will focus in Inspector.\n5. Change the value to `2.0` and press Enter.\n6. Adjust the value of the tweak linked to `clock`'s `IVAL` pin.\n\nTake a note how the changes are immediately applied while you are in the simulation mode. Try some other values and see how they behave.",
+      "content": "# Ajustes\n\nReiniciar un programa cada vez que cambia un valor en el Inspector es un inconveniente.\nCon los nodos `tweak-*` ,  puede ajustar los valores mientras el programa se está ejecutando.\n\nEn el patche actual, ya agregamos un `tweak-number` vinculado a `IVAL` .\n\n## Ejercicio\n\nAprendamos a agregar nuevos ajustes a su programa y controlarlos en tiempo de ejecución.\n\n1. Agregue el nodo `tweak-number` al patch.\n2. Vincula el pin de salida de `tweak-number` al pin `STEP` de `count`.\n3. Inicie la simulación.\n4. Haga doble clic en el nodo de ajuste; el cuadro de texto para el valor de ajuste se enfocará en Inspector.\n5. Cambie el valor a `2.0` y presione Enter.\n6. Ajustar el valor del ajuste vinculado al pin `clock` del `IVAL` .\n\nTome nota de cómo los cambios se aplican inmediatamente mientras se encuentra en el modo de simulación. Pruebe otros valores y vea cómo se comportan.",
       "id": "Bk86OdKuN",
       "position": {
         "units": "slots",
@@ -9,13 +9,13 @@
         "y": 0
       },
       "size": {
-        "height": 5,
+        "height": 7,
         "units": "slots",
         "width": 8
       }
     },
     {
-      "content": "## 👆 Save some typing\n\nUse Up/Down keyboard keys in the Inspector to adjust numeric values by 0.1. Hold Shift to adjust by 1.0.",
+      "content": "## 👆 Ahorre algo de escritura\n\nUtilice las teclas arriba/abajo del teclado en el Inspector para ajustar los valores numéricos en 0,1. Mantenga presionada la tecla Mayús para ajustar por 1.0.",
       "id": "H1mAsFFdE",
       "position": {
         "units": "slots",

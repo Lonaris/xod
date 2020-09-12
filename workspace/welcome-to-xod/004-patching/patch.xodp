@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "## 👆 Ways to add node\n\nAlternatively to double-clicking you can also press the “I” key or hit Edit → Insert Node.\n\nIf you don’t remember the name of a node, try to find it in Project Browser. Once you spot it there, drag’n’drop the item to the patch board or hit Place in its context menu.",
+      "content": "## 👆 Formas de agregar nodo\n\nAlternativamente, para hacer doble clic, también puede presionar la tecla “I” o presionar Editar → Insertar nodo.\n\nSi no recuerda el nombre de un nodo, intente buscarlo en el Navegador de proyectos. Una vez que lo vea allí, arrastre y suelte el elemento en el tablero de conexiones o presione Colocar en su menú contextual.",
       "id": "BJJH5p-cV",
       "position": {
         "units": "slots",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "content": "# Patching\n\nYou guessed correctly, you may add nodes and link them to build brand new programs and improve existing ones.\n\n## Exercise\n\nLet's extend our counting program so that we'll have two independent counters.\n\n1. Double-click on some empty space on the patch; the suggester line will appear.\n2. Start typing “clock” into it and press Enter once you see `xod/core/clock`.\n3. A new `clock` node will appear where you have double-clicked.\n4. Move the node around by dragging it.\n5. Repeat steps 1-4 to add `count` and `watch` nodes.\n6. Create a link between `clock`'s `TICK` pin and `count`'s `INC` pin by clicking on one pin, then the other.\n7. Create a link between `count`'s output pin and `watch`'s input pin.\n\nRun the simulation to see how the counters work in parallel. Try to set different `IVAL` parameters and see how it changes the behavior.",
+      "content": "# Parcheo\n\nAdivinó correctamente, puede agregar nodos y vincularlos para crear programas nuevos y mejorar los existentes.\n\n## Ejercicio\n\nExtendamos nuestro programa de conteo para que tengamos dos contadores independientes.\n\n1. Haga doble clic en algún espacio vacío del patch; aparecerá la línea de sugerencia.\n2. Empiece a escribir “clock” en él y presione Enter una vez que vea `xod/core/clock`.\n3. Aparecerá un nuevo nodo `clock` en el que haya hecho doble clic.\n4. Mueva el nodo arrastrándolo.\n5. Repita los pasos 1-4 para agregar los nodos `count` y `watch`.\n6. Cree un enlace entre el pin `clock`de `TICK`y el pin `count`'s `INC` haciendo clic en un pin y luego en el otro.\n7. Cree un enlace entre el pin de salida de `count`y el pin de entrada de `watch`.\n\nEjecute la simulación para ver cómo funcionan los contadores en paralelo. Intente establecer diferentes parámetros de `IVAL` y vea cómo cambia el comportamiento.",
       "id": "Hy-6APFO4",
       "position": {
         "units": "slots",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "content": "## 👆 Copy/paste\n\nAnother way of duplicating a group of nodes and links is selecting them by drawing a frame around to select multiple nodes at once and then copy/paste using the Edit menu or keyboard shortcuts traditional for your OS.\n\nIf you draw the selection frame from left to right, a node is selected only if fits inside completely; if you draw from right to left, the nodes which intersect the frame are also selected.",
+      "content": "## 👆 Copiar pegar\n\nOtra forma de duplicar un grupo de nodos y enlaces es seleccionarlos dibujando un marco alrededor para seleccionar varios nodos a la vez y luego copiar/pegar usando el menú Editar o los atajos de teclado tradicionales para su sistema operativo.\n\nSi dibuja el marco de selección de izquierda a derecha, un nodo se selecciona solo si cabe dentro completamente; si dibuja de derecha a izquierda, también se seleccionan los nodos que se cruzan con el marco.",
       "id": "rkOBIOtO4",
       "position": {
         "units": "slots",
