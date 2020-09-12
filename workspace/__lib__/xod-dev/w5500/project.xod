@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "Support for ethernet shields that use Wiznet W5500 chipset.",
+  "description": "Soporte para escudos ethernet que usan el chipset Wiznet W5500.",
   "license": "AGPL-3.0",
   "name": "w5500",
   "version": "0.35.0"

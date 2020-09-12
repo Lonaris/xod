@@ -1,5 +1,5 @@
 {
-  "description": "Open a TCP connection to the specified server.\n\nPossible errors:\n— Can't open TCP connection",
+  "description": "Abra una conexión TCP al servidor especificado.\n\nPosibles errores:\n— No se puede abrir la conexión TCP",
   "nodes": [
     {
       "id": "Bkw_kSrSL",
@@ -11,7 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "The socket connected",
+      "description": "El enchufe conectado",
       "id": "H1R1Q_Rr8",
       "label": "SOCK",
       "position": {
@@ -22,7 +22,7 @@
       "type": "xod/net/output-socket"
     },
     {
-      "description": "Open the connection",
+      "description": "Abre la conexión",
       "id": "HyWtFyHBSL",
       "label": "CONN",
       "position": {
@@ -36,7 +36,7 @@
       "boundLiterals": {
         "__out__": "80"
       },
-      "description": "A destination server port number",
+      "description": "Un número de puerto del servidor de destino",
       "id": "HyetYJSrHU",
       "label": "PORT",
       "position": {
@@ -47,7 +47,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Server name or IP address",
+      "description": "Nombre del servidor o dirección IP",
       "id": "S1GFKJBSBL",
       "label": "HOST",
       "position": {
@@ -58,7 +58,7 @@
       "type": "xod/patch-nodes/input-string"
     },
     {
-      "description": "A tethering internet",
+      "description": "Una conexión a Internet",
       "id": "SJ7VWxYSI",
       "label": "INET'",
       "position": {
@@ -69,7 +69,7 @@
       "type": "@/output-tethering-inet"
     },
     {
-      "description": "Pulses when the TCP connection is successfully open",
+      "description": "Pulsa cuando la conexión TCP se abre con éxito",
       "id": "SJttyrSBU",
       "label": "DONE",
       "position": {
@@ -80,7 +80,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "A tethering internet",
+      "description": "Una conexión a Internet",
       "id": "Sy6DyHSS8",
       "label": "INET",
       "position": {

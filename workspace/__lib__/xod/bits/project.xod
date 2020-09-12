@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "Low-level bits and bytes operations",
+  "description": "Operaciones de bits y bytes de bajo nivel",
   "license": "AGPL-3.0",
   "name": "bits",
   "version": "0.35.0"

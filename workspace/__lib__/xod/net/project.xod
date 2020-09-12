@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "General types and operations to manage network connections",
+  "description": "Tipos y operaciones generales para administrar conexiones de red",
   "license": "AGPL-3.0",
   "name": "net",
   "version": "0.35.0"

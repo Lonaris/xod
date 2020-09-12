@@ -1,5 +1,5 @@
 {
-  "description": "Begins a transmission to the I²C slave device.\n\nPossible errors:\n— Invalid I2C address",
+  "description": "Comienza una transmisión al dispositivo esclavo I2C.\n\nPosibles errores:\n— Dirección I2C no válida",
   "nodes": [
     {
       "id": "B13jr_VOW",
@@ -11,7 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Triggers the transmission start",
+      "description": "Activa el inicio de la transmisión",
       "id": "BJfKruVdb",
       "label": "SEND",
       "position": {
@@ -22,7 +22,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Pulses when the transmission successfully starts. Chain it to a `write-byte` node.",
+      "description": "Pulsa cuando la transmisión se inicia correctamente. Conéctelo a un nodo `write-byte` .",
       "id": "HJbjB_Nd-",
       "label": "DONE",
       "position": {
@@ -33,7 +33,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "I²C interface object",
+      "description": "Objeto de interfaz I²C",
       "id": "HJkfWmny7",
       "label": "I2C",
       "position": {
@@ -44,7 +44,7 @@
       "type": "@/input-i2c"
     },
     {
-      "description": "I²C address of the target slave device",
+      "description": "Dirección I²C del dispositivo esclavo de destino",
       "id": "SyssEEhJm",
       "label": "ADDR",
       "position": {

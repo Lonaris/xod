@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "give everything else a chance to initialize before `connect` blocks execution",
+      "content": "dar a todo lo demás la oportunidad de inicializarse antes de la ejecución de los bloques `connect` ",
       "id": "S1T3RAg77",
       "position": {
         "units": "slots",
@@ -15,7 +15,7 @@
       }
     }
   ],
-  "description": "Establish an internet connection by automatically getting all required configuration info from a DHCP server\n\nPossible errors:\n— Connection failed",
+  "description": "Establezca una conexión a Internet obteniendo automáticamente toda la información de configuración requerida de un servidor DHCP\n\nPosibles errores:\n— Error de conexión",
   "links": [
     {
       "id": "BJ-ApRx7m",
@@ -78,7 +78,7 @@
       "boundLiterals": {
         "__out__": "On Boot"
       },
-      "description": "Establish the connection",
+      "description": "Establecer la conexión",
       "id": "BJfXLrPDzm",
       "label": "CONN",
       "position": {
@@ -89,7 +89,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Pulses on a successful connection",
+      "description": "Pulsa en una conexión exitosa",
       "id": "H1b7LrDPGm",
       "label": "DONE",
       "position": {
@@ -100,7 +100,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "A W5500-based internet provider device",
+      "description": "Un dispositivo de proveedor de Internet basado en W5500",
       "id": "HkhKBPPfX",
       "label": "DEV",
       "position": {
@@ -120,7 +120,7 @@
       "type": "xod/core/defer"
     },
     {
-      "description": "An internet connection",
+      "description": "Una conexión a internet",
       "id": "rJ6H7ovfQ",
       "label": "INET",
       "position": {

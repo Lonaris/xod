@@ -1,11 +1,11 @@
 {
-  "description": "Constructs a datetime value from a year, month, day, hour, minute, and second",
+  "description": "Construye un valor de fecha y hora a partir de un año, mes, día, hora, minuto y segundo",
   "nodes": [
     {
       "boundLiterals": {
         "__out__": "1"
       },
-      "description": "Days value in range [1, 28-31]",
+      "description": "Valor de días en rango [1, 28-31]",
       "id": "HJgzhKxmvm",
       "label": "DAY",
       "position": {
@@ -25,7 +25,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Seconds value in range [0, 59]",
+      "description": "Segundos valor en rango [0, 59]",
       "id": "HygQhYlQw7",
       "label": "SEC",
       "position": {
@@ -36,7 +36,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Hours value in range [0, 23]",
+      "description": "Valor de horas en rango [0, 23]",
       "id": "S1-M2YemPQ",
       "label": "HOUR",
       "position": {
@@ -47,7 +47,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Minutes value in range [0, 59]",
+      "description": "Valor de minutos en rango [0, 59]",
       "id": "SkQnYg7wQ",
       "label": "MIN",
       "position": {
@@ -70,7 +70,7 @@
       "boundLiterals": {
         "__out__": "1"
       },
-      "description": "Month value in range [1, 12] ",
+      "description": "Valor del mes en rango [1, 12] ",
       "id": "r1f2FeXP7",
       "label": "MON",
       "position": {
@@ -84,7 +84,7 @@
       "boundLiterals": {
         "__out__": "1970"
       },
-      "description": "Year value in range [1970, 2105]",
+      "description": "Valor de año en rango [1970, 2105]",
       "id": "ryjoteXwm",
       "label": "YEAR",
       "position": {

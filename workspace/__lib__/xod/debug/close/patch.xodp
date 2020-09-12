@@ -1,8 +1,8 @@
 {
-  "description": "Closes connection",
+  "description": "Cierra la conexión",
   "nodes": [
     {
-      "description": "Pulses when the connection is closed",
+      "description": "Pulsa cuando la conexión está cerrada",
       "id": "B1eXvb_0BL",
       "label": "DONE",
       "position": {
@@ -16,7 +16,7 @@
       "boundLiterals": {
         "__out__": "Never"
       },
-      "description": "Close the connection",
+      "description": "Cerrar la conexión",
       "id": "By-QPWu0SU",
       "label": "CLS",
       "position": {
@@ -36,7 +36,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "A socket",
+      "description": "Un enchufe",
       "id": "SJNmmuCSL",
       "label": "SOCK",
       "position": {
@@ -47,7 +47,7 @@
       "type": "xod/net/input-socket"
     },
     {
-      "description": "An internet connection",
+      "description": "Una conexión a internet",
       "id": "SkTjFL5CU",
       "label": "INET'",
       "position": {
@@ -67,7 +67,7 @@
       "type": "xod/patch-nodes/utility"
     },
     {
-      "description": "An internet connection",
+      "description": "Una conexión a internet",
       "id": "rkX7PWORrU",
       "label": "INET",
       "position": {

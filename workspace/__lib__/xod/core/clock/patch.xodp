@@ -1,11 +1,11 @@
 {
-  "description": "Outputs pulses at regular intervals",
+  "description": "Emite pulsos a intervalos regulares",
   "nodes": [
     {
       "boundLiterals": {
         "__out__": "1"
       },
-      "description": "Tick interval in seconds",
+      "description": "Intervalo de tic en segundos",
       "id": "B13SCNhl-",
       "label": "IVAL",
       "position": {
@@ -16,7 +16,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Resets current count, restarts clock with new interval",
+      "description": "Reinicia la cuenta actual, reinicia el reloj con un nuevo intervalo",
       "id": "BJJICN2lW",
       "label": "RST",
       "position": {
@@ -45,7 +45,7 @@
       "type": "xod/patch-nodes/tabtest"
     },
     {
-      "description": "Pulses on each time interval end",
+      "description": "Pulsos en cada final del intervalo de tiempo",
       "id": "HJU8CE2lW",
       "label": "TICK",
       "position": {
@@ -59,7 +59,7 @@
       "boundLiterals": {
         "__out__": "True"
       },
-      "description": "Is the clock enabled, i.e. produces ticks? At the moment when set to true, starts counting from scratch.",
+      "description": "¿El reloj está habilitado, es decir, produce tics? En el momento en que se establece en verdadero, comienza a contar desde cero.",
       "id": "r1jzp_DTZ",
       "label": "EN",
       "position": {

@@ -1,8 +1,8 @@
 {
-  "description": "Represents a circle drawn with the foreground color.",
+  "description": "Representa un círculo dibujado con el color de primer plano.",
   "nodes": [
     {
-      "description": "X coordinate of the center point of the circle on the canvas.",
+      "description": "Coordenada X del punto central del círculo en el lienzo.",
       "id": "B1zSpmXDW8",
       "label": "X",
       "position": {
@@ -13,7 +13,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Y coordinate of the center point of the circle on the canvas.",
+      "description": "Coordenada Y del punto central del círculo en el lienzo.",
       "id": "Bk4r6QmPb8",
       "label": "Y",
       "position": {
@@ -34,7 +34,7 @@
       "type": "@/output-graphics"
     },
     {
-      "description": "Radius of the circle.",
+      "description": "Radio del círculo.",
       "id": "HkmH6QXPWL",
       "label": "R",
       "position": {

@@ -1,8 +1,8 @@
 {
-  "description": "Constructs a datetime value from a POSIX time format represented as 4 bytes.",
+  "description": "Construye un valor de fecha y hora a partir de un formato de hora POSIX representado como 4 bytes.",
   "nodes": [
     {
-      "description": "Most significant byte",
+      "description": "Byte más significativo",
       "id": "HJbV2vdL3I",
       "label": "B3",
       "position": {
@@ -51,7 +51,7 @@
       "type": "@/output-datetime"
     },
     {
-      "description": "Least significant byte",
+      "description": "Byte menos significativo",
       "id": "ryzE3DO83I",
       "label": "B0",
       "position": {

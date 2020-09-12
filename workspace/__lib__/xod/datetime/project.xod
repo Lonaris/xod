@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "Date and timestamp operations",
+  "description": "Operaciones de fecha y hora",
   "license": "AGPL-3.0",
   "name": "datetime",
   "version": "0.35.0"

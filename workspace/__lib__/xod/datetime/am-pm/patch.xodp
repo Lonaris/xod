@@ -1,5 +1,5 @@
 {
-  "description": "Changes format of hours from 24-hours to 12-hours",
+  "description": "Cambia el formato de horas de 24 horas a 12 horas",
   "links": [
     {
       "id": "B1teOFSD7",
@@ -231,7 +231,7 @@
       "type": "xod/core/and"
     },
     {
-      "description": "Outputs true from midnight to noon and false from noon to the end of the day",
+      "description": "Salida verdadera desde la medianoche hasta el mediodía y falsa desde el mediodía hasta el final del día",
       "id": "ByN3wtHPm",
       "label": "AM",
       "position": {
@@ -254,7 +254,7 @@
       "type": "xod/core/equal"
     },
     {
-      "description": "Hours value in range [1, 12]",
+      "description": "Valor de horas en rango [1, 12]",
       "id": "S16OEYrPX",
       "label": "12H",
       "position": {
@@ -316,7 +316,7 @@
       "type": "xod/core/greater"
     },
     {
-      "description": "Hours value in range [0,23]",
+      "description": "Valor de horas en rango [0,23]",
       "id": "ry3w4Frv7",
       "label": "24H",
       "position": {

@@ -1,8 +1,8 @@
 {
-  "description": "Adds seconds to a datetime",
+  "description": "Agrega segundos a una fecha y hora",
   "nodes": [
     {
-      "description": "Seconds to add. A negative value rewinds datetime back.",
+      "description": "Segundos para agregar. Un valor negativo rebobina la fecha y la hora.",
       "id": "HJRLHWQw7",
       "label": "T",
       "position": {

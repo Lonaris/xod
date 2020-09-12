@@ -1,5 +1,5 @@
 {
-  "description": "Transforms a datetime into a string timestamp in the form \"2018-03-25 23:35:04\"",
+  "description": "Transforma una fecha y hora en una marca de tiempo de cadena en el formulario \"2018-03-25 23:35:04\"",
   "links": [
     {
       "id": "B1XeDVfCJd7",

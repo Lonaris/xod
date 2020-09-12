@@ -1,5 +1,5 @@
 {
-  "description": "Reads analog signal value from analog sensor.\n\nPossible errors:\n— Invalid port",
+  "description": "Lee el valor de la señal analógica del sensor analógico.\n\nPosibles errores:\n— Puerto inválido",
   "links": [
     {
       "id": "HkDlNcCJQ",
@@ -48,7 +48,7 @@
   ],
   "nodes": [
     {
-      "description": "Fires on reading complete\n",
+      "description": "Se dispara al completar la lectura\n",
       "id": "BJdJV9RkX",
       "label": "DONE",
       "position": {
@@ -59,7 +59,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "The latest read value in range 0.0 … 1.0",
+      "description": "El último valor leído en el rango 0.0 … 1.0",
       "id": "BkoeN9Ay7",
       "label": "VAL",
       "position": {
@@ -73,7 +73,7 @@
       "boundLiterals": {
         "__out__": "Continuously"
       },
-      "description": "Triggers new read",
+      "description": "Activa una nueva lectura",
       "id": "SkUhQ5RkQ",
       "label": "UPD",
       "position": {
@@ -87,7 +87,7 @@
       "boundLiterals": {
         "__out__": "A0"
       },
-      "description": "Analog port to read from. Should start with `A` to succeed.\n",
+      "description": "Puerto analógico para leer. Debe comenzar con `A` para tener éxito.\n",
       "id": "r1l3XcR17",
       "label": "PORT",
       "position": {

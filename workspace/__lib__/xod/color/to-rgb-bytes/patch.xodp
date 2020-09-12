@@ -1,5 +1,5 @@
 {
-  "description": "Destructs a color value into red, green, and blue components encoded as byte values",
+  "description": "Descompone un valor de color en componentes rojo, verde y azul codificados como valores de bytes.",
   "nodes": [
     {
       "id": "BkepNZjsQ",
@@ -11,7 +11,7 @@
       "type": "@/input-color"
     },
     {
-      "description": "Blue",
+      "description": "Azul",
       "id": "S1ER4-isX",
       "label": "B",
       "position": {
@@ -22,7 +22,7 @@
       "type": "xod/patch-nodes/output-byte"
     },
     {
-      "description": "Red",
+      "description": "Rojo",
       "id": "S1Z04Zjsm",
       "label": "R",
       "position": {
@@ -33,7 +33,7 @@
       "type": "xod/patch-nodes/output-byte"
     },
     {
-      "description": "Green",
+      "description": "Verde",
       "id": "Sk7AV-ijX",
       "label": "G",
       "position": {

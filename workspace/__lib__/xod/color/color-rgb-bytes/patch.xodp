@@ -1,5 +1,5 @@
 {
-  "description": "Constructs a color value from red, green, and blue components expressed as byte values. Use decimal (0d to 255d) or hexadecimal (00h to FFh) byte literals. For example, if a graphical editor shows a blue as “#287ec9” or “rgb(40, 126, 201)” use the following literals for R/G/B: 28h/7Eh/C9h or 40d/126d/201d",
+  "description": "Construye un valor de color a partir de componentes rojo, verde y azul expresados como valores de bytes. Use decimal (0d to 255d) or hexadecimal (00h to FFh) byte literals. For example, if a graphical editor shows a blue as “#287ec9” or “rgb(40, 126, 201)” use the following literals for R/G/B: 28h/7Eh/C9h or 40d/126d/201d",
   "nodes": [
     {
       "id": "BkNQ7-oom",
@@ -11,7 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Blue",
+      "description": "Azul",
       "id": "Hklnz7WjoQ",
       "label": "B",
       "position": {

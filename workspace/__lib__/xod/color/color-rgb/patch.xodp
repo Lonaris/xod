@@ -1,5 +1,5 @@
 {
-  "description": "Constructs a color value from red, green, and blue components. Each component should be in the range [0, 1]. Values out of this range are truncated to 0 or 1",
+  "description": "Construye un valor de color a partir de componentes rojo, verde y azul. Cada componente debe estar en el rango [0, 1]. Los valores fuera de este rango se truncan a 0 o 1",
   "links": [
     {
       "id": "BJK95Wos7",
@@ -149,7 +149,7 @@
       "type": "xod/bits/number-to-u8"
     },
     {
-      "description": "Red",
+      "description": "Rojo",
       "id": "HyquDboo7",
       "label": "R",
       "position": {
@@ -160,7 +160,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Green",
+      "description": "Verde",
       "id": "S1yKPZjjQ",
       "label": "G",
       "position": {
@@ -220,7 +220,7 @@
       "type": "xod/math/map-clip"
     },
     {
-      "description": "Blue",
+      "description": "Azul",
       "id": "ryxkYD-joQ",
       "label": "B",
       "position": {

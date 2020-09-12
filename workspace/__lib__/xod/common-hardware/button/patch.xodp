@@ -1,5 +1,5 @@
 {
-  "description": "Reads a generic button or another mechanical switch. It is expected that the button is low while pressed, the on-board pull-up resistor is enabled if possible. The node provides signal debounce with 20 ms settle delay.\n\nPossible errors:\n— Invalid port",
+  "description": "Lee un botón genérico u otro interruptor mecánico. Se espera que el botón esté bajo mientras se presiona, la resistencia pull-up integrada está habilitada si es posible. El nodo proporciona antirrebote de señal con un retardo de asentamiento de 20 ms.\n\nPosibles errores:\n— Puerto inválido",
   "links": [
     {
       "id": "ByoDg7SIS",
@@ -48,7 +48,7 @@
   ],
   "nodes": [
     {
-      "description": "Last read value. Equals to `true` while the button is pressed (hold down) and `false` while it is released.",
+      "description": "Último valor leído. Igual a `verdadero` mientras se presiona el botón (mantenerlo presionado) y `falso` mientras se suelta.",
       "id": "BJ--G1tI-",
       "label": "PRS",
       "position": {
@@ -62,7 +62,7 @@
       "boundLiterals": {
         "__out__": "Continuously"
       },
-      "description": "Triggers new read",
+      "description": "Activa una nueva lectura",
       "id": "ByG3ZyKLW",
       "label": "UPD",
       "position": {
@@ -73,7 +73,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Board port number the button is connected to.",
+      "description": "Número de puerto de la placa al que está conectado el botón.",
       "id": "ByNiWkt8Z",
       "label": "PORT",
       "position": {
@@ -84,7 +84,7 @@
       "type": "xod/patch-nodes/input-port"
     },
     {
-      "description": "Fires on reading complete",
+      "description": "Se dispara alcompletar la lectura",
       "id": "SJjATKrlm",
       "label": "DONE",
       "position": {

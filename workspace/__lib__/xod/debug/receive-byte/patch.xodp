@@ -1,8 +1,8 @@
 {
-  "description": "Read a single byte of the response from an opened connection\n\nPossible errors:\n— Can't receive a data from the socket\n— No available bytes to read",
+  "description": "Leer un solo byte de la respuesta de una conexión abierta\n\nPosibles errores:\n— No se pueden recibir datos del socket\n— No hay bytes disponibles para leer",
   "nodes": [
     {
-      "description": "A tethering internet",
+      "description": "Una conexión a Internet",
       "id": "BJ5nbeFSL",
       "label": "INET'",
       "position": {
@@ -31,7 +31,7 @@
       "type": "xod/patch-nodes/utility"
     },
     {
-      "description": "Pulses when the byte is read",
+      "description": "Pulsa cuando se lee el byte",
       "id": "Hyxk3ZgtrL",
       "label": "DONE",
       "position": {
@@ -42,7 +42,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Read the byte",
+      "description": "Leer el byte",
       "id": "SJ-JhZgtr8",
       "label": "READ",
       "position": {
@@ -53,7 +53,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "A tethering internet",
+      "description": "Una conexión a Internet",
       "id": "r1doblFBI",
       "label": "INET",
       "position": {
@@ -64,7 +64,7 @@
       "type": "@/input-tethering-inet"
     },
     {
-      "description": "The last read byte",
+      "description": "El último byte leído",
       "id": "ryJ3bgKSL",
       "label": "CHAR",
       "position": {

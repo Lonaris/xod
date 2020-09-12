@@ -1,8 +1,8 @@
 {
-  "description": "Sends a message through an opened TCP/UDP connection\n\nPossible errors:\n— Can't send data to the socket",
+  "description": "Envía un mensaje a través de una conexión TCP/UDP abierta\n\nPosibles errores:\n— No se pueden enviar datos al socket",
   "nodes": [
     {
-      "description": "Send the message",
+      "description": "Enviar el mensaje",
       "id": "ByW4A1xFBU",
       "label": "SEND",
       "position": {
@@ -13,7 +13,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "A socket",
+      "description": "Un enchufe",
       "id": "H1z958cA8",
       "label": "SOCK'",
       "position": {
@@ -24,7 +24,7 @@
       "type": "xod/net/output-socket"
     },
     {
-      "description": "The message to send",
+      "description": "El mensaje a enviar",
       "id": "HJMVCJxtBU",
       "label": "MSG",
       "position": {
@@ -35,7 +35,7 @@
       "type": "xod/patch-nodes/input-string"
     },
     {
-      "description": "A socket",
+      "description": "Un enchufe",
       "id": "HyOYqU5RU",
       "label": "SOCK",
       "position": {
@@ -55,7 +55,7 @@
       "type": "xod/patch-nodes/utility"
     },
     {
-      "description": "A tethering internet",
+      "description": "Una conexión a Internet",
       "id": "Sy7vWxtr8",
       "label": "INET",
       "position": {
@@ -75,7 +75,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "A tethering internet",
+      "description": "Una conexión a Internet",
       "id": "rJvCGxtHL",
       "label": "INET'",
       "position": {
@@ -86,7 +86,7 @@
       "type": "@/output-tethering-inet"
     },
     {
-      "description": "Pulses when the message is successfully sent",
+      "description": "Pulsa cuando el mensaje se envía correctamente",
       "id": "rkVN0keKBL",
       "label": "DONE",
       "position": {

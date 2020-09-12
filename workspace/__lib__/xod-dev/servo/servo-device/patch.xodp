@@ -1,11 +1,11 @@
 {
-  "description": "Represents an RC hobby servo device\n\nPossible errors:\n— Invalid port",
+  "description": "Representa un servo dispositivo RC hobby\n\nPosibles errores:\n— Puerto inválido",
   "nodes": [
     {
       "boundLiterals": {
         "__out__": "544"
       },
-      "description": "The minimal rated pulse width (in µS) ",
+      "description": "El ancho de pulso nominal mínimo (en µS) ",
       "id": "ByJ9IwVBV",
       "label": "Pmin",
       "position": {
@@ -19,7 +19,7 @@
       "boundLiterals": {
         "__out__": "2400"
       },
-      "description": "The maximal rated pulse width (in µS) ",
+      "description": "El ancho de pulso nominal máximo (en µS) ",
       "id": "H15qLDVSE",
       "label": "Pmax",
       "position": {
@@ -30,7 +30,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "The servo device",
+      "description": "El servo dispositivo",
       "id": "HJmZvD4SE",
       "label": "DEV",
       "position": {
@@ -50,7 +50,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "The board port the servo is connected to",
+      "description": "El puerto de la placa al que está conectado el servo",
       "id": "HyNOLPVB4",
       "label": "PORT",
       "position": {

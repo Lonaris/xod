@@ -1,8 +1,8 @@
 {
-  "description": "Waits for the incoming data packages with the defined timeout in seconds.\n\nPossible error:\n- Do not receive any incoming data within the defined timeout",
+  "description": "Espera los paquetes de datos entrantes con el tiempo de espera definido en segundos.\n\nPosible error:\n- No reciba ningún dato entrante dentro del tiempo de espera definido",
   "nodes": [
     {
-      "description": "A tethering internet",
+      "description": "Una conexión a Internet",
       "id": "B1E6kwQ6H8",
       "label": "INET'",
       "position": {
@@ -13,7 +13,7 @@
       "type": "@/output-tethering-inet"
     },
     {
-      "description": "Pulses when Socket have available bytes",
+      "description": "Pulsa cuando el socket tiene bytes disponibles",
       "id": "B1x6kPXpBU",
       "label": "Y",
       "position": {
@@ -24,7 +24,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Begin waiting of the incoming package data",
+      "description": "Comience a esperar de los datos del paquete entrante",
       "id": "BJQp1DX6B8",
       "label": "UPD",
       "position": {
@@ -44,7 +44,7 @@
       "type": "xod/patch-nodes/utility"
     },
     {
-      "description": "A tethering internet",
+      "description": "Una conexión a Internet",
       "id": "Hkf6JvXaBU",
       "label": "INET",
       "position": {
@@ -58,7 +58,7 @@
       "boundLiterals": {
         "__out__": "30"
       },
-      "description": "How long to wait the next data package in seconds.",
+      "description": "Cuánto tiempo esperar el próximo paquete de datos en segundos.",
       "id": "HkmKJrprU",
       "label": "T",
       "position": {
@@ -78,7 +78,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Pulses when all the data was readen",
+      "description": "Pulsa cuando se leyeron todos los datos",
       "id": "ry6kwX6rL",
       "label": "END",
       "position": {

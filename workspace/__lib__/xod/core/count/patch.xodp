@@ -1,5 +1,5 @@
 {
-  "description": "Stores a number which gets incremented on each `INC` pulse.",
+  "description": "Almacena un número que se incrementa en cada pulso  `INC` .",
   "nodes": [
     {
       "id": "H1MAWAu8-",
@@ -11,7 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Triggers a single increment.",
+      "description": "Activa un solo incremento.",
       "id": "HJAq-A_8-",
       "label": "INC",
       "position": {
@@ -25,7 +25,7 @@
       "boundLiterals": {
         "__out__": "1"
       },
-      "description": "Value to add on each increment. Use a negative value (e.g. -1) to make decrements.",
+      "description": "Valor a agregar en cada incremento. Utilice un valor negativo (por ejemplo, -1) para hacer decrementos.",
       "id": "HJvqZ0dLZ",
       "label": "STEP",
       "position": {
@@ -36,7 +36,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Resets the accumulated value to zero.",
+      "description": "Restablece el valor acumulado a cero.",
       "id": "SkUjZA_L-",
       "label": "RST",
       "position": {
@@ -47,7 +47,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "The accumulated value.",
+      "description": "El valor acumulado.",
       "id": "r1yhZRd8W",
       "position": {
         "units": "slots",

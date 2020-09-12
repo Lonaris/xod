@@ -1,5 +1,5 @@
 {
-  "description": "Checks that tethering internet initialized and answers for AT commands",
+  "description": "Comprueba que la conexión a Internet se haya inicializado y responda a los comandos AT",
   "nodes": [
     {
       "id": "B1xhXPIHU",
@@ -11,7 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Pulses when answer received",
+      "description": "Pulsa cuando se recibe la respuesta",
       "id": "H10rNPLH8",
       "label": "OK",
       "position": {
@@ -25,7 +25,7 @@
       "boundLiterals": {
         "__out__": "On Boot"
       },
-      "description": "Perform the check",
+      "description": "Realice la verificación",
       "id": "HyciQvUSU",
       "label": "KICK",
       "position": {
@@ -45,7 +45,7 @@
       "type": "xod/patch-nodes/utility"
     },
     {
-      "description": "A tethering internet",
+      "description": "Una conexión a Internet",
       "id": "rJac7vUHI",
       "label": "INET",
       "position": {

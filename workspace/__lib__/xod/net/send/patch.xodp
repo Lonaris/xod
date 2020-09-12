@@ -1,8 +1,8 @@
 {
-  "description": "Send a message through an opened TCP connection\n\nPossible errors:\n— Can't send the data to the socket",
+  "description": "Enviar un mensaje a través de una conexión TCP abierta\n\nPosibles errores:\n: no se pueden enviar los datos al socket",
   "nodes": [
     {
-      "description": "Send the message",
+      "description": "Enviar el mensaje",
       "id": "HJ-ccxvqCL",
       "label": "SEND",
       "position": {
@@ -13,7 +13,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Pulses when the message is successfully sent",
+      "description": "Pulsa cuando el mensaje se envía correctamente",
       "id": "HJBc9evqRL",
       "label": "DONE",
       "position": {
@@ -24,7 +24,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "The message to send",
+      "description": "El mensaje a enviar",
       "id": "HyG95lPcRL",
       "label": "MSG",
       "position": {
@@ -35,7 +35,7 @@
       "type": "xod/patch-nodes/input-string"
     },
     {
-      "description": "An internet connection",
+      "description": "Una conexión a internet",
       "id": "HymAgP5CL",
       "label": "INET'",
       "position": {
@@ -46,7 +46,7 @@
       "type": "xod/patch-nodes/output-t1"
     },
     {
-      "description": "A socket",
+      "description": "Un enchufe",
       "id": "S1kpxvqR8",
       "label": "SOCK'",
       "position": {
@@ -66,7 +66,7 @@
       "type": "xod/patch-nodes/abstract"
     },
     {
-      "description": "An internet connection",
+      "description": "Una conexión a internet",
       "id": "SyjTlwc08",
       "label": "INET",
       "position": {
@@ -77,7 +77,7 @@
       "type": "xod/patch-nodes/input-t1"
     },
     {
-      "description": "A socket",
+      "description": "Un enchufe",
       "id": "ry_newqA8",
       "label": "SOCK",
       "position": {

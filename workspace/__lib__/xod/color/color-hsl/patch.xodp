@@ -1,5 +1,5 @@
 {
-  "description": "Constructs a color value from hue, saturation, and lightness values (HSL model)",
+  "description": "Construye un valor de color a partir de los valores de tono, saturación y luminosidad (modelo HSL)",
   "nodes": [
     {
       "id": "BJyghZosm",
@@ -11,7 +11,7 @@
       "type": "@/output-color"
     },
     {
-      "description": "0 is for red, 0.33 for green, 0.66 for blue, and 0.99 is for red again. Some systems use degrees for the hue component. The value of 1.0 corresponds to 360° of such systems. When out out of [0; 1) range only the fractional part is taken into account",
+      "description": "0 es para rojo, 0.33 para verde, 0.66 para azul y 0.99 es para rojo nuevamente. Algunos sistemas usan grados para el componente de tono. El valor de 1.0 corresponde a 360 ° de tales sistemas. Cuando está fuera de [0; 1) rango solo se tiene en cuenta la parte fraccionaria",
       "id": "HJgyhboim",
       "label": "H",
       "position": {
@@ -34,7 +34,7 @@
       "boundLiterals": {
         "__out__": "1"
       },
-      "description": "Saturation. Should be in the range [0, 1]. 0.0 corresponds to fully-gray shade and 1.0 to saturated color shade. Values out of the range are truncated to 0 or 1",
+      "description": "Saturación. Debe estar en el rango [0, 1]. 0.0 corresponde a un tono completamente gris y 1.0 a un tono de color saturado. Los valores fuera del rango se truncan a 0 o 1",
       "id": "Symyhboj7",
       "label": "S",
       "position": {
@@ -48,7 +48,7 @@
       "boundLiterals": {
         "__out__": "0.5"
       },
-      "description": "Lightness. Should be in the range [0, 1]. 0.0 corresponds to black; 0.5 to pure color; 1.0 to white. Values out of the range are truncated to 0 or 1",
+      "description": "Ligereza. Debe estar en el rango [0, 1]. 0.0 corresponde a negro; 0,5 hasta color puro; 1.0 a blanco. Los valores fuera del rango se truncan a 0 o 1",
       "id": "r1g7J3-ii7",
       "label": "L",
       "position": {

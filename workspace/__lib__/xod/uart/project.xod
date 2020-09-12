@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "Provides constructors and Nodes to interact with UARTs (Software, Hardware, USB) in XOD.",
+  "description": "Proporciona constructores y nodos para interactuar con UART (software, hardware, USB) en XOD.",
   "license": "AGPL-3.0",
   "name": "uart",
   "version": "0.35.0"

@@ -1,5 +1,5 @@
 {
-  "description": "Formats a color as a 6-digit hexadecimal value (ex.: \"FF3300\")",
+  "description": "Formatea un color como un valor hexadecimal de 6  (ej.: \"FF3300\")",
   "nodes": [
     {
       "id": "S1YduQsj7",

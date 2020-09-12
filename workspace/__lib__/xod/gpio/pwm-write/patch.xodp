@@ -1,5 +1,5 @@
 {
-  "description": "Outputs hardware-supported PWM signal on a board port.\n\nPossible errors:\n— Invalid port",
+  "description": "Emite una señal PWM compatible con el hardware en un puerto de la placa.\n\nPosibles errores:\n— Puerto no válido",
   "nodes": [
     {
       "boundLiterals": {
@@ -16,7 +16,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Duty cycle value in range 0.0 … 1.0",
+      "description": "Valor del ciclo de trabajo en rango 0.0 … 1.0",
       "id": "ByXnYHPyb",
       "label": "DUTY",
       "position": {
@@ -27,7 +27,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Fires on writing complete",
+      "description": "Dispara al completar la escritura",
       "id": "SkwRqaq17",
       "label": "DONE",
       "position": {
@@ -38,7 +38,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Board port to write to. If the port supports hardware PWM it will be used. If not, it will be set high for values greater than 0.5 and set low otherwise.",
+      "description": "Puerto de la placa para escribir. Si el puerto admite hardware PWM, se utilizará. De lo contrario, se establecerá alto para valores superiores a 0,5 y bajo en caso contrario.",
       "id": "Syro9C9yQ",
       "label": "PORT",
       "position": {

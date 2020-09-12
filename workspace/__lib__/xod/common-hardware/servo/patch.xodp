@@ -1,8 +1,8 @@
 {
-  "description": "Drives a standard hobby servo.\n\nPossible errors:\n— Invalid port",
+  "description": "Acciona un servo de pasatiempo estándar. \n\nposibles errores: \n— puerto no válido",
   "nodes": [
     {
-      "description": "Fires on writing complete",
+      "description": "Dispara al completar la escritura",
       "id": "Hk-rxfFUxm",
       "label": "DONE",
       "position": {
@@ -22,7 +22,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Board port number the servo is connected to.",
+      "description": "Número de puerto de la placa al que está conectado el servo.",
       "id": "S1vGmu6Gb",
       "label": "PORT",
       "position": {
@@ -36,7 +36,7 @@
       "boundLiterals": {
         "__out__": "Continuously"
       },
-      "description": "Triggers new write",
+      "description": "Activa una nueva escritura",
       "id": "SkrgGYLxQ",
       "label": "UPD",
       "position": {
@@ -47,7 +47,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Desired servo angle or value in unit range [0.0, 1.0]. For standard servo 0.0 would be mapped to 0° and 1.0 would be 180°.",
+      "description": "Ángulo o valor del servo deseado en el rango de unidades [0.0, 1.0]. Para el servo estándar, 0.0 se asignaría a 0° y 1.0 sería 180°.",
       "id": "r1sfQ_6fb",
       "label": "VAL",
       "position": {
@@ -58,7 +58,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Use `xod-dev/servo/servo` instead",
+      "description": "Utilice `xod-dev/servo/servo` en su lugar",
       "id": "rku2bm0YN",
       "position": {
         "units": "slots",

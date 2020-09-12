@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "give everything else a chance to initialize before `connect` blocks execution",
+      "content": "dar a todo lo demás la oportunidad de inicializarse antes de la ejecución de los bloques `connect` ",
       "id": "r1NFR0e7X",
       "position": {
         "units": "slots",
@@ -15,7 +15,7 @@
       }
     }
   ],
-  "description": "Establish an internet connection configured manually",
+  "description": "Establecer una conexión a Internet configurada manualmente",
   "links": [
     {
       "id": "BkVfCCxXX",
@@ -119,7 +119,7 @@
   ],
   "nodes": [
     {
-      "description": "The internet connection",
+      "description": "La conexión a internet",
       "id": "B1UUEfYMX",
       "label": "INET",
       "position": {
@@ -139,7 +139,7 @@
       "type": "xod/core/defer"
     },
     {
-      "description": "Pulses on a successful connection",
+      "description": "Pulsa en una conexión exitosa",
       "id": "H1ZLMdSLWQ",
       "label": "DONE",
       "position": {
@@ -159,7 +159,7 @@
       "type": "@/connect-manual-blocking"
     },
     {
-      "description": "An IP address of the gateway. Defaults to `IP` with the last octet being `1`",
+      "description": "Una dirección IP de la puerta de enlace. El valor predeterminado es `IP` con el último octeto `1`",
       "id": "HyVxSMFzQ",
       "label": "GTW",
       "position": {
@@ -173,7 +173,7 @@
       "boundLiterals": {
         "__out__": "On Boot"
       },
-      "description": "Establish the connection",
+      "description": "Establecer la conexión",
       "id": "Syz8zur8WQ",
       "label": "CONN",
       "position": {
@@ -184,7 +184,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "A subnet mask. Defaults to `255.255.255.0`",
+      "description": "Una máscara de subred. Predeterminado a `255.255.255.0`",
       "id": "r1XbSzFz7",
       "label": "SBN",
       "position": {
@@ -195,7 +195,7 @@
       "type": "xod/net/input-ip-address"
     },
     {
-      "description": "An IP address of the DNS server. Defaults to `IP` with the last octet being `1`",
+      "description": "Una dirección IP del servidor DNS. El valor predeterminado es `IP` y el último octeto es `1`",
       "id": "rkZSNzKz7",
       "label": "DNS",
       "position": {
@@ -206,7 +206,7 @@
       "type": "xod/net/input-ip-address"
     },
     {
-      "description": "Own IP address",
+      "description": "Dirección propia de IP",
       "id": "rkuXdr8-Q",
       "label": "IP",
       "position": {
@@ -217,7 +217,7 @@
       "type": "xod/net/input-ip-address"
     },
     {
-      "description": "A W5500-based internet provider device",
+      "description": "Un dispositivo de proveedor de Internet basado en W5500",
       "id": "rygPuMYz7",
       "label": "DEV",
       "position": {

@@ -1,5 +1,5 @@
 {
-  "description": "Converts a packed binary coded decimal byte into a byte value in range [0, 99]",
+  "description": "Convierte un byte decimal codificado en binario empaquetado en un valor de byte en el rango [0, 99]",
   "links": [
     {
       "id": "B1F1jOxgz",

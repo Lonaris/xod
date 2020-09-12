@@ -1,8 +1,8 @@
 {
-  "description": "Reads analog signal value from board ADC port.\n\nPossible errors:\n— Invalid port",
+  "description": "Lee el valor de la señal analógica del puerto ADC de la placa.\n\nPosibles errores:\n— Puerto no válido",
   "nodes": [
     {
-      "description": "Fires on reading complete",
+      "description": "Se dispara al completar la lectura",
       "id": "BkGpcpcJQ",
       "label": "DONE",
       "position": {
@@ -25,7 +25,7 @@
       "boundLiterals": {
         "__out__": "A0"
       },
-      "description": "Analog port to read from. Should start with `A` to succeed.\n",
+      "description": "Puerto analógico para leer. Debe comenzar con `A` para tener éxito..\n",
       "id": "SkuhqCqym",
       "label": "PORT",
       "position": {
@@ -36,7 +36,7 @@
       "type": "xod/patch-nodes/input-port"
     },
     {
-      "description": "The latest read value in range 0.0 … 1.0",
+      "description": "El último valor leído en el rango 0.0 … 1.0",
       "id": "SyBtREhlW",
       "label": "VAL",
       "position": {
@@ -50,7 +50,7 @@
       "boundLiterals": {
         "__out__": "Continuously"
       },
-      "description": "Triggers new read",
+      "description": "Activa una nueva lectura",
       "id": "SyKd0E2x-",
       "label": "UPD",
       "position": {

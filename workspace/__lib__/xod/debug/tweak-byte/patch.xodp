@@ -1,5 +1,5 @@
 {
-  "description": "Outputs a fixed byte value which you may change in real-time during a debug or simulation session",
+  "description": "Emite un valor de byte fijo que puede cambiar en tiempo real durante una sesión de depuración o simulación",
   "nodes": [
     {
       "id": "SykJ8wjXN",

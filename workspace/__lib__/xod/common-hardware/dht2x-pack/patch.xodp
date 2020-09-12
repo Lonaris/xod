@@ -1,7 +1,7 @@
 {
   "comments": [
     {
-      "content": "The MSB in D2 stores temperature sign",
+      "content": "El MSB en D2 almacena el signo de temperatura",
       "id": "Hk8tJZokG",
       "position": {
         "units": "slots",
@@ -15,7 +15,7 @@
       }
     }
   ],
-  "description": "Utility. Packs raw data from a DHT21 or higher thermometer into meaningful humidity and temperature.",
+  "description": "Utilidad. Empaqueta los datos brutos de un termómetro DHT21 o superior en valores significativos de humedad y temperatura.",
   "links": [
     {
       "id": "HJOmJZiyf",
@@ -277,7 +277,7 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
-      "description": "Use nodes from `xod-dev/dht` library instead",
+      "description": "Utilice nodos de la biblioteca `xod-dev/dht` en su lugar",
       "id": "SkViKbaIB",
       "position": {
         "units": "slots",
@@ -340,7 +340,7 @@
       "boundLiterals": {
         "BytUCdHD1-": "1000"
       },
-      "description": "Divide by 10 to calculate percents. Divide by 100 to convert to [0, 1] range",
+      "description": "Dividir por 10 para calcular el porcentaje. Dividir por 100 para convertir al rango [0, 1]",
       "id": "r1EHReikf",
       "position": {
         "units": "slots",

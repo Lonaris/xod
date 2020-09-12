@@ -1,5 +1,5 @@
 {
-  "description": "Outputs a 128-character string which you may change in real-time during a debug or simulation session",
+  "description": "Genera una cadena de 128 caracteres que puede cambiar en tiempo real durante una sesión de depuración o simulación",
   "nodes": [
     {
       "id": "H157HwsX7",

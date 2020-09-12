@@ -1,5 +1,5 @@
 {
-  "description": "Nodes to work with WS2812 (NeoPixel). The main difference from the other libraries that this library does not use a buffer to light up the LEDs. So it gives a possibility to light up a really long LED strip with a small microcontroller without a huge amount of RAM.",
+  "description": "Nodos para trabajar con WS2812 (NeoPixel). La principal diferencia con las otras bibliotecas es que esta biblioteca no utiliza un búfer para iluminar los LED. Por lo tanto, da la posibilidad de iluminar una tira de LED realmente larga con un pequeño microcontrolador sin una gran cantidad de RAM.",
   "license": "AGPL-3.0",
   "name": "ws2812",
   "version": "0.35.0"

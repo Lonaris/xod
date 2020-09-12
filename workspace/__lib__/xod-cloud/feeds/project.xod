@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "Nodes for communicating with the XOD Cloud Feeds service",
+  "description": "Nodos para comunicarse con el servicio XOD Cloud Feeds",
   "license": "AGPL-3.0",
   "name": "feeds",
   "version": "0.35.0"

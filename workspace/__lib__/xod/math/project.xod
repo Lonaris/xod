@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "Nodes of XOD for basic mathematical operations",
+  "description": "Nodos de XOD para operaciones matemáticas básicas",
   "license": "AGPL-3.0",
   "name": "math",
   "version": "0.35.0"

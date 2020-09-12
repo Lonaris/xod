@@ -1,5 +1,5 @@
 {
-  "description": "Nodes to work with the HC-SR04 ultrasonic range meters.",
+  "description": "Nodos para trabajar con los medidores de rango ultrasónicos HC-SR04.",
   "license": "AGPL-3.0",
   "name": "hc-sr04",
   "version": "0.35.0"

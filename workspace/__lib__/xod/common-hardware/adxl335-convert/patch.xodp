@@ -15,7 +15,7 @@
       }
     },
     {
-      "content": "Unit range to volts",
+      "content": "Rango de unidad a voltios",
       "id": "rJ4or5It-",
       "position": {
         "units": "slots",
@@ -29,7 +29,7 @@
       }
     }
   ],
-  "description": "Utility node. Converts raw ADC value of an ADXL335 accelerometer to approximate acceleration in ɡ (standard gravity) units.",
+  "description": "Nodo de utilidad. Convierte el valor ADC sin procesar de un acelerómetro ADXL335 en una aceleración aproximada en unidades ɡ (gravedad estándar).",
   "links": [
     {
       "id": "r1boScUYb",

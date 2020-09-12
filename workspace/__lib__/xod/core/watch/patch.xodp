@@ -1,5 +1,5 @@
 {
-  "description": "Shows incoming values in the realtime, when a debug session is active",
+  "description": "Muestra los valores entrantes en tiempo real, cuando una sesión de depuración está activa",
   "nodes": [
     {
       "id": "B1iYZOzoZ",
@@ -20,7 +20,7 @@
       "type": "xod/patch-nodes/input-string"
     },
     {
-      "description": "Use `xod/debug/watch` instead",
+      "description": "Use `xod/debug/watch` en su lugar",
       "id": "Sy5lXAWNN",
       "position": {
         "units": "slots",

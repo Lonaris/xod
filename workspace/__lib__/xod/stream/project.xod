@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "Nodes to process sequences of bytes one by one",
+  "description": "Nodos para procesar secuencias de bytes uno por uno",
   "license": "AGPL-3.0",
   "name": "stream",
   "version": "0.35.0"

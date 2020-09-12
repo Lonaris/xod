@@ -1,11 +1,11 @@
 {
-  "description": "Requests local IP from Tethering Internet, that connected to some network.\n\nPossible errors:\n— Can't get local IP address",
+  "description": "Solicita IP local de una conexión a Internet, que se conectó a alguna red.\n\nPosibles errores:\n— No se puede obtener la dirección IP local",
   "nodes": [
     {
       "boundLiterals": {
         "__out__": "Never"
       },
-      "description": "Send request for local IP address",
+      "description": "Enviar solicitud de dirección IP local",
       "id": "B1ZYjLdCrU",
       "label": "UPD",
       "position": {
@@ -34,7 +34,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "A local IP address",
+      "description": "Una dirección IP local",
       "id": "HkXZvORHU",
       "label": "IP",
       "position": {
@@ -45,7 +45,7 @@
       "type": "xod/net/output-ip-address"
     },
     {
-      "description": "Pulses when IP address received",
+      "description": "Pulsa cuando se recibe la dirección IP",
       "id": "S1xFi8u0BU",
       "label": "DONE",
       "position": {
@@ -56,7 +56,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "A tethering internet",
+      "description": "Una conexión a Internet",
       "id": "rJQYj8dRrU",
       "label": "INET",
       "position": {

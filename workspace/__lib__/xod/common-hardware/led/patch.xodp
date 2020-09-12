@@ -1,5 +1,5 @@
 {
-  "description": "Drives a generic single color dimmable LED. The conversion between luminance and LED power is biased so that change in brightness on range 0…1 is percepted more or less uniformly by a human.\n\nPossible errors:\n— Invalid port",
+  "description": "Controla un LED regulable genérico de un solo color. La conversión entre luminancia y potencia del LED está sesgada de modo que el cambio de brillo en el rango 0… 1 sea percibido de manera más o menos uniforme por un ser humano.\n\nPosibles errores:\n— Puerto inválido",
   "links": [
     {
       "id": "ByOBjd8lm",
@@ -81,7 +81,7 @@
   ],
   "nodes": [
     {
-      "description": "Board port number the LED is connected to. The port should be capable of generating PWM signal.",
+      "description": "Número de puerto de la placa al que está conectado el LED. El puerto debe poder generar una señal PWM.",
       "id": "B1oqkTnIb",
       "label": "PORT",
       "position": {
@@ -101,7 +101,7 @@
       "type": "xod/gpio/pwm-write"
     },
     {
-      "description": "Luminance (brightness) value in relative units [0.0, 1.0].",
+      "description": "Valor de luminancia (brillo) en unidades relativas [0.0, 1.0].",
       "id": "HyYh1a3LZ",
       "label": "LUM",
       "position": {
@@ -124,7 +124,7 @@
       "boundLiterals": {
         "__out__": "True"
       },
-      "description": "Updates the luminocity of the LED on incoming value change while `ACT` is true.",
+      "description": "Actualiza la luminosidad del LED en el cambio de valor entrante mientras `ACT` es verdadero.",
       "id": "rJIdYs1LB",
       "label": "ACT",
       "position": {
@@ -135,7 +135,7 @@
       "type": "xod/patch-nodes/input-boolean"
     },
     {
-      "description": "Fires on writing complete",
+      "description": "Dispara al completar la escritura",
       "id": "rJxhvs_Lx7",
       "label": "DONE",
       "position": {

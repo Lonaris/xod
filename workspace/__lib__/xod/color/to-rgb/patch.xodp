@@ -1,5 +1,5 @@
 {
-  "description": "Destructs a color value into red, green, and blue components. Each component is in range [0, 1]",
+  "description": "Descompone un valor de color en componentes rojo, verde y azul. Cada componente está en el rango [0, 1]",
   "links": [
     {
       "id": "BJz_i-jiQ",
@@ -123,7 +123,7 @@
       "type": "xod/bits/u8-to-number"
     },
     {
-      "description": "Blue",
+      "description": "Azul",
       "id": "B1efXsbiom",
       "label": "B",
       "position": {
@@ -156,7 +156,7 @@
       "type": "xod/math/map-clip"
     },
     {
-      "description": "Green",
+      "description": "Verde",
       "id": "ByzXjZjjX",
       "label": "G",
       "position": {
@@ -198,7 +198,7 @@
       "type": "xod/bits/u8-to-number"
     },
     {
-      "description": "Red",
+      "description": "Rojo",
       "id": "SJKyjZjim",
       "label": "R",
       "position": {

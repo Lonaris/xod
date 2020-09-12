@@ -1,5 +1,5 @@
 {
-  "description": "Canvas is a rectangular piece of the screen (i.e. scene) which gets redrawn completely when at least a single graphics element on it is updated.\n",
+  "description": "El lienzo es una pieza rectangular de la pantalla (es decir, una escena) que se vuelve a dibujar completamente cuando se actualiza al menos un elemento gráfico en él.\n",
   "nodes": [
     {
       "id": "H1wRGzm-U",
@@ -12,7 +12,7 @@
       "type": "@/output-graphics"
     },
     {
-      "description": "Background color of the scene.",
+      "description": "Color de fondo de la escena.",
       "id": "HJiLQ5ATB",
       "label": "BG",
       "position": {
@@ -23,7 +23,7 @@
       "type": "xod/color/input-color"
     },
     {
-      "description": "Width of the canvas.",
+      "description": "Ancho del lienzo.",
       "id": "SJCd0mhbU",
       "label": "W",
       "position": {
@@ -34,7 +34,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "X coordinate of the canvas pivot point on the screen.",
+      "description": "Coordenada X del punto de pivote del lienzo en la pantalla.",
       "id": "SJs_CQ3ZU",
       "label": "X",
       "position": {
@@ -45,7 +45,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Height of the canvas.",
+      "description": "Altura del lienzo.",
       "id": "Skx0dA7nWI",
       "label": "H",
       "position": {
@@ -56,7 +56,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Y coordinate of the canvas pivot point on the screen.",
+      "description": "Coordenada Y del punto de pivote del lienzo en la pantalla.",
       "id": "rJp_R73Z8",
       "label": "Y",
       "position": {
@@ -79,7 +79,7 @@
       "boundLiterals": {
         "__out__": "#FFFFFF"
       },
-      "description": "Foreground color. The default color for subsequent graphics elements.",
+      "description": "Color de primer plano. El color predeterminado para los elementos gráficos posteriores.",
       "id": "ryyuAQnWL",
       "label": "FG",
       "position": {

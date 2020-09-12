@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "Support for ESP8266 as a slave module",
+  "description": "Soporte para ESP8266 como módulo esclavo",
   "license": "AGPL-3.0",
   "name": "esp8266",
   "version": "0.35.0"

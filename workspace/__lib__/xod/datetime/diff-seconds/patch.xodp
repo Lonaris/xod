@@ -1,5 +1,5 @@
 {
-  "description": "Calculates the difference between two datetimes in seconds",
+  "description": "Calcula la diferencia entre dos fechas en segundos",
   "nodes": [
     {
       "id": "H1Bdc44v7",
@@ -29,7 +29,7 @@
       "type": "@/input-datetime"
     },
     {
-      "description": "Difference in seconds. It is negative if IN1 precedes IN2",
+      "description": "Diferencia en segundos. Es negativo si IN1 precede a IN2",
       "id": "SJZd5VVDm",
       "position": {
         "units": "slots",

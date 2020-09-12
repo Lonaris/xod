@@ -1,5 +1,5 @@
 {
-  "description": "Outputs a pulse whenever you trigger it manually in real-time during a debug or simulation session",
+  "description": "Emite un pulso cada vez que lo activa manualmente en tiempo real durante una sesión de depuración o simulación",
   "nodes": [
     {
       "id": "Bkf4BDsmV",

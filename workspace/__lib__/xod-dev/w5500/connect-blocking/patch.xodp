@@ -1,5 +1,5 @@
 {
-  "description": "Establish an internet connection by automatically getting all required configuration info from a DHCP server\n\nPossible errors:\n— Connection failed",
+  "description": "Establezca una conexión a Internet obteniendo automáticamente toda la información de configuración requerida de un servidor DHCP\n\nPosibles errores:\n— Error de conexión",
   "nodes": [
     {
       "id": "BJXXLBwPfQ",
@@ -14,7 +14,7 @@
       "boundLiterals": {
         "__out__": "On Boot"
       },
-      "description": "Establish the connection",
+      "description": "Establecer la conexión",
       "id": "BJfXLrPDzm",
       "label": "CONN",
       "position": {
@@ -34,7 +34,7 @@
       "type": "xod/patch-nodes/utility"
     },
     {
-      "description": "Pulses on a successful connection",
+      "description": "Pulsa en una conexión exitosa",
       "id": "H1b7LrDPGm",
       "label": "DONE",
       "position": {
@@ -45,7 +45,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "A W5500-based internet provider device",
+      "description": "Un dispositivo de proveedor de Internet basado en W5500",
       "id": "HkhKBPPfX",
       "label": "DEV",
       "position": {
@@ -56,7 +56,7 @@
       "type": "@/input-w5500-device"
     },
     {
-      "description": "An internet connection",
+      "description": "Una conexión a internet",
       "id": "rJ6H7ovfQ",
       "label": "INET",
       "position": {

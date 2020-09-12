@@ -1,5 +1,5 @@
 {
-  "description": "Quickstart hardware control node for hobby RC servos.",
+  "description": "Nodo de control de hardware de inicio rápido para servos RC hobby.",
   "links": [
     {
       "id": "B1X4egSKE",
@@ -123,7 +123,7 @@
       "boundLiterals": {
         "__out__": "True"
       },
-      "description": "Makes the servo react to incoming values while `ACT` is true",
+      "description": "Hace que el servo reaccione a los valores entrantes mientras que `ACT` es verdadero",
       "id": "S1MzssyLr",
       "label": "ACT",
       "position": {

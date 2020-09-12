@@ -1,5 +1,5 @@
 {
-  "description": "Reads acceleration from an ADXL335 based sensor. Note that concrete ADXL335 instances differ from each other and their output should be adjusted for precise mesearument.\n\nBy default the values are coarse although reasonable enough to determine shaking and approximate orientation.\n\nFor an ideally factored accelerometer the outputs are in range ±3ɡ.\n\nPossible errors:\n— Invalid port",
+  "description": "Lee la aceleración de un sensor basado en ADXL335. Tenga en cuenta que las instancias concretas de ADXL335 difieren entre sí y su salida debe ajustarse para una medición precisa.\n\nDe forma predeterminada, los valores son aproximados, aunque lo suficientemente razonables para determinar la vibración y la orientación aproximada.\n\nPara un acelerómetro idealmente factorizado, las salidas están en el rango ± 3ɡ.\n\nPosibles errores:\n— Puerto inválido",
   "links": [
     {
       "id": "B1U7Bc8F-",
@@ -198,7 +198,7 @@
       "type": "@/adxl335-convert"
     },
     {
-      "description": "Non-adjusted acceleration along Z axis in range [-3, 3]",
+      "description": "Aceleración no ajustada a lo largo del eje Z en el rango [-3, 3]",
       "id": "B1sBHcItb",
       "label": "Z",
       "position": {
@@ -221,7 +221,7 @@
       "boundLiterals": {
         "__out__": "A0"
       },
-      "description": "Board port to which the X axis output is connected. Should be capable of analog reading analog values.",
+      "description": "Puerto de placa al que se conecta la salida del eje X. Debe ser capaz de leer valores analógicos ",
       "id": "BkdA4cUFW",
       "label": "Px",
       "position": {
@@ -235,7 +235,7 @@
       "boundLiterals": {
         "__out__": "A0"
       },
-      "description": "Board port to which the Z axis output is connected. Should be capable of analog reading analog values.",
+      "description": "Puerto de placa al que se conecta la salida del eje z. Debe ser capaz de leer valores analógicos ",
       "id": "BynRV5UKb",
       "label": "Pz",
       "position": {
@@ -246,7 +246,7 @@
       "type": "xod/patch-nodes/input-port"
     },
     {
-      "description": "Non-adjusted acceleration along X axis in range [-3, 3]",
+      "description": "Aceleración no ajustada a lo largo del eje X en el rango [-3, 3]",
       "id": "H1EVB58Y-",
       "label": "X",
       "position": {
@@ -266,7 +266,7 @@
       "type": "xod/gpio/analog-read"
     },
     {
-      "description": "Non-adjusted acceleration along Y axis in range [-3, 3]",
+      "description": "Aceleración no ajustada a lo largo del eje Y en el rango [-3, 3]",
       "id": "S1DHH5LFb",
       "label": "Y",
       "position": {
@@ -287,7 +287,7 @@
       "type": "xod/core/any"
     },
     {
-      "description": "Fires on reading complete",
+      "description": "Se dispara al completar la lectura",
       "id": "Syl_tntHxX",
       "label": "DONE",
       "position": {
@@ -319,7 +319,7 @@
       "boundLiterals": {
         "__out__": "A0"
       },
-      "description": "Board port to which the Y axis output is connected. Should be capable of analog reading analog values.",
+      "description": "Puerto de placa al que está conectada la salida del eje Y. Debe ser capaz de leer valores analógicos.",
       "id": "rk9RE5ItW",
       "label": "Py",
       "position": {
@@ -333,7 +333,7 @@
       "boundLiterals": {
         "__out__": "Continuously"
       },
-      "description": "Triggers new sensor reading",
+      "description": "Activa una nueva lectura del sensor",
       "id": "rkEkrcLKb",
       "label": "UPD",
       "position": {

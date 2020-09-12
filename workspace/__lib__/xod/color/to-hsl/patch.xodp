@@ -1,5 +1,5 @@
 {
-  "description": "Destructs a color value to hue, saturation, and lightness values. See color-hsl docs for more details",
+  "description": "Destruye un valor de color en valores de tono, saturación y luminosidad. Consulte la documentación de color-hsl para obtener más detalles.",
   "nodes": [
     {
       "description": "Saturation",
@@ -33,7 +33,7 @@
       "type": "@/input-color"
     },
     {
-      "description": "Lightness",
+      "description": "luminosidad",
       "id": "SkeqVaziom",
       "label": "L",
       "position": {

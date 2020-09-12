@@ -1,5 +1,5 @@
 {
-  "description": "Transforms a datetime into a POSIX time format represented as 4 bytes.",
+  "description": "Transforma una fecha y hora en un formato de hora POSIX representado como 4 bytes.",
   "nodes": [
     {
       "id": "Bk7f_u8hU",
@@ -21,7 +21,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Most significant byte",
+      "description": "Byte más significativo",
       "id": "rJbXzOuLhI",
       "label": "B3",
       "position": {
@@ -32,7 +32,7 @@
       "type": "xod/patch-nodes/output-byte"
     },
     {
-      "description": "Least significant byte",
+      "description": "Byte menos significativo",
       "id": "rkMQzOuLnI",
       "label": "B0",
       "position": {

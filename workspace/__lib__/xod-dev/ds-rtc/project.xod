@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "This library operates DS1302/DS1307/DS3231 based breakout RTC boards",
+  "description": "Esta biblioteca opera tarjetas RTC de ruptura basadas en DS1302 / DS1307 / DS3231",
   "license": "AGPL-3.0",
   "name": "ds-rtc",
   "version": "0.35.0"

@@ -1,5 +1,5 @@
 {
-  "description": "Closes an open TCP connection",
+  "description": "Cierra una conexión TCP abierta",
   "nodes": [
     {
       "description": "An internet connection",
@@ -13,7 +13,7 @@
       "type": "@/output-w5500-inet"
     },
     {
-      "description": "Pulses when the connection is closed",
+      "description": "Pulsa cuando la conexión está cerrad",
       "id": "BJsYpQtZm",
       "label": "DONE",
       "position": {
@@ -24,7 +24,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Close the connection",
+      "description": "Cerrar la conexión",
       "id": "SJldxXCv-m",
       "label": "CLS",
       "position": {
@@ -35,7 +35,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "An internet connection",
+      "description": "Una conexión a internet",
       "id": "r1kAPUqCU",
       "label": "INET",
       "position": {
@@ -46,7 +46,7 @@
       "type": "@/input-w5500-inet"
     },
     {
-      "description": "The socket",
+      "description": "La toma",
       "id": "rJ53A_vzQ",
       "label": "SOCK",
       "position": {

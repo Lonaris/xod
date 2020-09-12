@@ -1,5 +1,5 @@
 {
-  "description": "Nodes to drive ST7735 based TFT LCD displays. This library supports 128x160 resolution displays which are connected through the hardware SPI interface. Physically, some displays based on the 7735 chip may differ from each other and have different sets of instructions for initialization. To solve this, the library contains several device nodes for different types of displays. These nodes are labeled \"B\", \"G\", \"RG\", and \"RR\".",
+  "description": "Nodos para controlar pantallas LCD TFT basadas en ST7735. Esta biblioteca admite pantallas de resolución 128x160 que están conectadas a través de la interfaz SPI de hardware. Físicamente, algunas pantallas basadas en el chip 7735 pueden diferir entre sí y tener diferentes conjuntos de instrucciones para la inicialización. Para resolver esto, la biblioteca contiene varios nodos de dispositivos para diferentes tipos de pantallas. Estos nodos están etiquetados \"B\", \"G\", \"RG\", and \"RR\".",
   "license": "AGPL-3.0",
   "name": "st7735-display",
   "version": "0.35.0"

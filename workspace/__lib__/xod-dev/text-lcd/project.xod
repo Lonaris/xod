@@ -1,5 +1,5 @@
 {
-  "description": "Nodes to drive a common text liquid crystal displays with I²C or parallel interfaces.",
+  "description": "Nodos para controlar pantallas de cristal líquido de texto común con I²C o interfaces paralelas.",
   "license": "AGPL-3.0",
   "name": "text-lcd",
   "version": "0.35.0"

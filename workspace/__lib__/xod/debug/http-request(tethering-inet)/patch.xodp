@@ -1,5 +1,5 @@
 {
-  "description": "Performs an HTTP request and returns the response as a stream of characters\n\nPossible errors:\n— Can't open TCP connection\n— Can't send data to the socket",
+  "description": "Realiza una solicitud HTTP y devuelve la respuesta como un flujo de caracteres\n\nPosibles errores:\n— No se puede abrir la conexión TCP\n— No se pueden enviar datos al socket",
   "links": [
     {
       "id": "B1NVe01LI",
@@ -249,7 +249,7 @@
       "boundLiterals": {
         "__out__": "\"GET\""
       },
-      "description": "An HTTP method (e.g., GET, POST, PUT, or DELETE)",
+      "description": "Un método HTTP (por ejemplo, GET, POST, PUT o DELETE)",
       "id": "B1KLWgCyL8",
       "label": "METH",
       "position": {
@@ -275,7 +275,7 @@
       "boundLiterals": {
         "__out__": "\"\""
       },
-      "description": "A domain name of the server",
+      "description": "Un nombre de dominio del servidor",
       "id": "BJALbe0yLU",
       "label": "HOST",
       "position": {
@@ -289,7 +289,7 @@
       "boundLiterals": {
         "__out__": "\"\""
       },
-      "description": "Additional headers",
+      "description": "Encabezados adicionales",
       "id": "Hyyg8WeRyUU",
       "label": "HDRS",
       "position": {
@@ -300,7 +300,7 @@
       "type": "xod/patch-nodes/input-string"
     },
     {
-      "description": "A tethering internet",
+      "description": "Una conexión a Internet",
       "id": "S16beAy8L",
       "label": "INET",
       "position": {
@@ -323,7 +323,7 @@
       "boundLiterals": {
         "__out__": "\"\""
       },
-      "description": "The request body (optional)",
+      "description": "El cuerpo de la solicitud (opcional)",
       "id": "S1pUZl01IL",
       "label": "BODY",
       "position": {
@@ -346,7 +346,7 @@
       "boundLiterals": {
         "__out__": "\"/\""
       },
-      "description": "A path to the requested resource",
+      "description": "Una ruta al recurso solicitado",
       "id": "SJzLWe0JLL",
       "label": "PATH",
       "position": {
@@ -357,7 +357,7 @@
       "type": "xod/patch-nodes/input-string"
     },
     {
-      "description": "The last received character from the response",
+      "description": "El último carácter recibido de la respuesta",
       "id": "SkUbg0yI8",
       "label": "CHAR",
       "position": {
@@ -377,7 +377,7 @@
       "type": "@/send"
     },
     {
-      "description": "Begin the request",
+      "description": "Comience la solicitud",
       "id": "SylIZl0yUL",
       "label": "INIT",
       "position": {
@@ -388,7 +388,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Pulses when a new response character is received",
+      "description": "Pulsa cuando se recibe un nuevo carácter de respuesta",
       "id": "r15IWxA18U",
       "label": "RCV",
       "position": {
@@ -402,7 +402,7 @@
       "boundLiterals": {
         "__out__": "80"
       },
-      "description": "A port number on which the server is listening. In most configurations, HTTP web servers listen at port 80",
+      "description": "Un número de puerto en el que escucha el servidor. En la mayoría de las configuraciones, los servidores web HTTP escuchan en el puerto 80",
       "id": "r1VLWeR1II",
       "label": "PORT",
       "position": {
@@ -426,7 +426,7 @@
       "type": "xod/core/concat"
     },
     {
-      "description": "Pulses when all response data is received and the connection is closed",
+      "description": "Pulsa cuando se reciben todos los datos de respuesta y se cierra la conexión",
       "id": "rkeeIZe0yIL",
       "label": "END",
       "position": {

@@ -2,7 +2,7 @@
   "authors": [
     "XOD"
   ],
-  "description": "Nodes to get some basic data from the XOD Cloud API",
+  "description": "Nodos para obtener algunos datos básicos de la API de XOD Cloud",
   "license": "AGPL-3.0",
   "name": "basics",
   "version": "0.35.0"
